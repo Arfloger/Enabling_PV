@@ -1,129 +1,63 @@
 header.main-header
-    .main-header__fixed
-        .container-max
-            .flex-between
-                .logo
-                    a(href="index.html").logo__link
-                        img(src='./assets/img/assets/logo.svg', alt='Логотип').logo__img
-                nav.nav.main-header__nav
-                    ul.nav__list
-                        li.nav__item.active
-                            a.nav__link Главная
-                        li.nav__item
-                            a(href="what-is.html").nav__link Что такое фотовольтаика
-                        //- li.nav__item
-                        //-     a(href="story.html").nav__link История проекта
-                        li.nav__item.arrow
-                            a(href="schools.html").nav__link Солнечные школы
-                            ul.inner-list
-                                li.inner-list__item
-                                    a(href="story.html").inner-list__link История проекта
-                                li.inner-list__item
-                                    a(href="school.html").inner-list__link Школа №37, Томск
-                                li.inner-list__item
-                                    a(href="school.html").inner-list__link Школа №157, Краснодар
-                                li.inner-list__item
-                                    a(href="school.html").inner-list__link Школа №112, Москва
-                                li.inner-list__item
-                                    a(href="school.html").inner-list__link Школа №14, Сочи
-                                li.inner-list__item
-                                    a(href="school.html").inner-list__link Школа №137, Краснодар
-                                li.inner-list__item
-                                    a(href="school.html").inner-list__link Школа №56, Ростов-на-Дону
-                        li.nav__item
-                            a(href="news.html").nav__link Новости
-                        li.nav__item
-                            a(href="about.html").nav__link О нас
-                        li.nav__item
-                            a(href="contacts.html").nav__link Контакты
-                .main-header__wrapper
-                    .main-header__social.social
-                        ul.social__list
-                            li.social__item
-                                a(href="#", area-label='Мы в Инстаграм').social__link.social__link--inst
-                            li.social__item
-                                a(href="#", area-label='Мы в ВК').social__link.social__link--vk
-                    .lang
-                        button(type="button", aria-label="Выбрать язык").lang__btn.lang__main-btn Ru
-                        ul.lang__list
-                            li.lang__item
-                                a(aria-label="Закрыть").lang__btn.lang__btn--close
-                            li.lang__item
-                                a(href="#", aria-label="Английский").lang__btn En
-                            li.lang__item
-                                a(href="#", aria-label="Русский").lang__btn.active Ru
-                            li.lang__item
-                                a(href="#", aria-label="Немецкий").lang__btn De
-                    //- .search
-                    //-     .search__back
-                    //-         form
-                    //-             .flex-end
-                    //-                 .search__wrap
-                    //-                     input(type='search', placeholder='Поиск').search__input
-                    //-                     button(type='reset', area-label='Сбросить результаты поиска').search__reset
-                    //-                     ul.search__list
-                    //-                         li.search__item
-                    //-                             a(href='#').search__link Краснодар, школа №37
-                    //-                         li.search__item
-                    //-                             a(href='#').search__link Краснодар, школа №37
-                    //-                 button(type='button', area-label='Найти').search__button
-                        
-                    .burger
-                        button(area-label='Открыть меню').burger-btn
-            .mob-menu-back
-                .mob-menu
-                    button(area-label='Закрыть меню').close-btn
-                    nav.nav
-                        ul.nav__list
-                            li.nav__item.active
-                                a.nav__link Главная
-                            li.nav__item
-                                a(href="what-is.html").nav__link Что такое фотовольтаика
-                            //- li.nav__item
-                            //-     a(href="story.html").nav__link История проекта
-                            li.nav__item.nav__item--inner Солнечные школы
-                                ul.mob-inner-list
-                                    li.mob-inner-list__item
-                                        a(href="story.html").mob-inner-list__link История проекта
-                                    li.mob-inner-list__item
-                                        a(href="school.html").mob-inner-list__link Школа №37, Томск
-                                    li.mob-inner-list__item
-                                        a(href="school.html").mob-inner-list__link Школа №157, Краснодар
-                                    li.mob-inner-list__item
-                                        a(href="school.html").mob-inner-list__link Школа №112, Москва
-                                    li.mob-inner-list__item
-                                        a(href="school.html").mob-inner-list__link Школа №14, Сочи
-                                    li.mob-inner-list__item
-                                        a(href="school.html").mob-inner-list__link Школа №137, Краснодар
-                                    li.mob-inner-list__item
-                                        a(href="school.html").mob-inner-list__link Школа №56, Ростов-на-Дону
-                            li.nav__item.nav__item--inner Солнечные школы 2
-                                ul.mob-inner-list
-                                    li.mob-inner-list__item
-                                        a(href="story.html").mob-inner-list__link История проекта
-                                    li.mob-inner-list__item
-                                        a(href="school.html").mob-inner-list__link Школа №37, Томск
-                                    li.mob-inner-list__item
-                                        a(href="school.html").mob-inner-list__link Школа №157, Краснодар
-                                    li.mob-inner-list__item
-                                        a(href="school.html").mob-inner-list__link Школа №112, Москва
-                                    li.mob-inner-list__item
-                                        a(href="school.html").mob-inner-list__link Школа №14, Сочи
-                                    li.mob-inner-list__item
-                                        a(href="school.html").mob-inner-list__link Школа №137, Краснодар
-                                    li.mob-inner-list__item
-                                        a(href="school.html").mob-inner-list__link Школа №56, Ростов-на-Дону
-                            li.nav__item
-                                a(href="news.html").nav__link Новости
-                            li.nav__item
-                                a(href="about.html").nav__link О нас
-                            li.nav__item
-                                a(href="contacts.html").nav__link Контакты
-                    .mob-social
-                        ul.mob-social__list
-                            li.mob-social__item
-                                a(href="tel:84958778866").mob-social__link.mob-social__link--tel 8 (495) 877 88 66
-                            li.mob-social__item
-                                a(href="#").mob-social__link.mob-social__link--inst solarschools
-                            li.mob-social__item
-                                a(href="#").mob-social__link.mob-social__link--vk sschools
+    .container-max
+        .flex-between
+            .logo
+                a(href="index.html").logo__link
+                    img(src='./assets/img/assets/logo.svg', alt='Логотип').logo__img
+            nav.nav.main-header__nav
+                ul.nav__list
+                    li.nav__item.active
+                        a.nav__link Главная
+                    li.nav__item.arrow
+                        a(href="#").nav__link Деятельность
+                        ul.inner-list
+                            li.inner-list__item
+                                a(href="#").inner-list__link Деятельность 1
+                            li.inner-list__item
+                                a(href="#").inner-list__link Деятельность 2
+                            li.inner-list__item
+                                a(href="#").inner-list__link Деятельность 3
+                    li.nav__item.arrow
+                        a(href="#").nav__link Темы
+                        ul.inner-list
+                            li.inner-list__item
+                                a(href="#").inner-list__link Тема 1
+                            li.inner-list__item
+                                a(href="#").inner-list__link Тема 2
+                            li.inner-list__item
+                                a(href="#").inner-list__link Тема 3
+                    li.nav__item
+                        a(href="#").nav__link Проекты
+                    li.nav__item
+                        a(href="#").nav__link Поиск партнеров
+                    li.nav__item
+                        a(href="#").nav__link Статьи
+                    li.nav__item
+                        a(href="#").nav__link Календарь
+                    li.nav__item.arrow
+                        a(href="#").nav__link О нас
+                        ul.inner-list
+                            li.inner-list__item
+                                a(href="#").inner-list__link О нас 1
+                            li.inner-list__item
+                                a(href="#").inner-list__link О нас 2
+                            li.inner-list__item
+                                a(href="#").inner-list__link О нас 3
+                    li.nav__item
+                        a(href="#").nav__link Контакты
+            .main-header__wrapper
+                .main-header__social.social
+                    ul.social__list
+                        li.social__item
+                            a(href="#", area-label='Мы в Инстаграм', target="_blank").social__link.social__link--inst
+                .lang
+                    button(type="button", aria-label="Выбрать язык").lang__btn.lang__btn--main De
+                    ul.lang__list
+                        li.lang__item
+                            a(aria-label="Закрыть").lang__btn.lang__btn--close
+                        li.lang__item
+                            a(href="#", aria-label="Английский").lang__btn En
+                        li.lang__item
+                            a(href="#", aria-label="Русский").lang__btn Ru
+                        li.lang__item
+                            a(href="#", aria-label="Немецкий").lang__btn.active De

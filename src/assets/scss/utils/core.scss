@@ -15,26 +15,12 @@ body {
   padding: 0;
   color: $main;
   font-family: $mainFont;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: normal;
-  line-height: 1.5;
+  line-height: 164.4%;
   overflow-wrap: break-word;
   word-wrap: break-word;
   background-color: $back;
-  position: relative;
-  overflow-x: hidden !important;
-
-  @media screen and (max-width: $desktopWidth) {
-    font-size: 17px;
-  }
-
-  @media screen and (max-width: $tabletWidth) {
-    font-size: 14px;
-  }
-
-  @media screen and (max-width: $phoneWidth) {
-    font-size: 11px;
-  }
 }
 
 h1,
@@ -157,11 +143,6 @@ a {
   color: $primary;
   text-decoration: none;
   transition: color .4s;
-
-  &:hover,
-  &:focus {
-    color: #B78D17;
-  }
 }
 
 img {

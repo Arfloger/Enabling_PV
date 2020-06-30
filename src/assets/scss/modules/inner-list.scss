@@ -1,0 +1,34 @@
+.inner-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 200px;
+    padding: 10px 0;
+    background: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.06);
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: visibility .2s ease,opacity .2s ease,transform .2s ease;
+
+    &__link {
+        font-family: $primaryFont;
+        display: block;
+        width: 100%;
+        padding: 4px 15px;
+        color: $main;
+        font-size: 12px;
+        font-weight: bold;
+        transition: color .5s;
+        outline: none;
+    
+        &:hover,
+        &:focus {
+          color: $secondary;
+        }
+      }
+}

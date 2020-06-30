@@ -1,0 +1,54 @@
+.nav {
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex-grow: 1;
+    flex-shrink: 0;
+    position: relative;
+
+    &.active .nav__link {
+      color: $active;
+      cursor: default;
+    }
+
+    &.active.arrow::after {
+      border-left-color: $active;
+      border-bottom-color: $active;
+    }
+
+    &:hover .inner-list {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0);
+      z-index: 10;
+      transition: opacity .08s ease, transform .08s ease;
+    }
+  }
+
+  &__link {
+    font-family: $thirdFont;
+    display: block;
+    width: 100%;
+    padding: 10px 35px;
+    color: $main;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+    transition: color .5s;
+    outline: none;
+    white-space: nowrap;
+
+    &:hover,
+    &:focus {
+      color: $secondary;
+    }
+  }
+}
