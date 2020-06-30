@@ -1,0 +1,26 @@
+block variables
+
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title= pageTitle
+  body
+    noscript
+      style.
+        .center {
+        padding: 10px;
+        text-align: center;
+        background-color: #1851c2;
+        color: #fff;
+        position: relative;
+        z-index: 200;
+        }
+      .container-max
+        p.center
+          | Ваш браузер не поддерживает javaScript. Сайт может отображаться некорректно.
+
+    include ../includes/header
+    block content
+    

@@ -1,0 +1,18 @@
+mixin input(id, type, label)
+    .input-field
+        input(id= id, type= type).project-input
+        label(for= id).project-label= label
+
+mixin error(id, type, label)
+    .input-field.error
+        input(id= id, type= type).project-input
+        label(for= id).project-label= label
+        span.error-text Неправильный email
+
+mixin textarea(id, label)
+    .input-field.error
+        textarea(id= id).project-textarea
+        label(for= id).project-label= label
+        span.error-text error
+
+
