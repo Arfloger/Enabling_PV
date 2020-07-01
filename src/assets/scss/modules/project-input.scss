@@ -1,0 +1,25 @@
+.project-input {
+    font-family: inherit;
+    height: 61px;
+    width: 100%;
+    padding: 30px 23px 10px;
+    color: $main;
+    font-size: 16px;
+    background-color: #F3F4F5;
+    border: 1px solid #F3F4F5;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    transition: background-color .4s, border .4s;
+    box-shadow: none;
+
+    &:hover {
+        border: 1px solid $primary;
+    }
+
+    &:focus {
+        background-color: #fff;
+        border: 1px solid $primary;
+    }
+}

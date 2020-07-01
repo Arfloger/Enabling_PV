@@ -1,0 +1,10 @@
+.link {
+  color: $primary;
+  text-decoration: none;
+  transition: opacity .4s;
+
+  &:hover,
+  &:focus {
+    opacity: .7;
+  }
+}

@@ -5,11 +5,29 @@
 @import "utils/core";
 @import "utils/visually-hidden";
 
+@import "modules/link";
+@import "modules/button";
+
+@import "modules/input-field";
+@import "modules/project-input";
+@import "modules/project-label";
+@import "modules/project-select";
+@import "modules/project-textarea";
+@import "modules/error-text";
+@import "modules/success-text";
+
 @import "modules/flex-between";
 @import "modules/main-header";
+@import "modules/main-footer";
 @import "modules/nav";
 @import "modules/inner-list";
 @import "modules/logo";
 @import "modules/lang";
 @import "modules/social";
 @import "modules/arrow";
+
+@import "modules/contact-cards";
+@import "modules/contact-card";
+@import "modules/contacts";
+@import "modules/contacts-form";
+@import "modules/contact-item";

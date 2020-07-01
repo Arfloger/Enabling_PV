@@ -15,4 +15,14 @@ mixin textarea(id, label)
         label(for= id).project-label= label
         span.error-text error
 
+mixin contact-card(src, title, pos, link, descr)
+    article.contact-card
+        .contact-card__img-wrapper
+            img(src= src, width="150", alt= title).contact-card__img
+        .contact-card__info
+            h3.contact-card__title= title
+            span.contact-card__pos= pos
+            p.contact-card__descr= descr
+            a(href="#").contact-card__link.link= link
+
 

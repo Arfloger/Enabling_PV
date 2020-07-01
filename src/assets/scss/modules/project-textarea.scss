@@ -1,0 +1,26 @@
+.project-textarea {
+    display: block;
+    font-family: inherit;
+    height: 233px;
+    width: 100%;
+    padding: 23px;
+    color: #352C11;
+    font-size: 16px;
+    background-color: #F3F4F5;
+    border: 1px solid #F3F4F5;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    resize: none;
+    transition: background-color .4s, border .4s;
+
+    &:hover {
+        border: 1px solid $primary;
+    }
+
+    &:focus {
+        background-color: #fff;
+        border: 1px solid $primary;
+    }
+}

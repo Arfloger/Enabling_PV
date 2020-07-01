@@ -1,0 +1,15 @@
+.contact-item {
+  padding-left: 30px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 13px;
+
+  &--address {
+    background-image: url("../img/assets/icon-pin.svg");
+  }
+
+  &--site {
+    background-size: 15px;
+    background-image: url("../img/assets/icon-site.svg");
+  }
+}

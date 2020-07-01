@@ -1,0 +1,28 @@
+.input-field {
+    position: relative;
+    margin: 25px 0;
+
+    &.error > input,
+    &.error textarea,
+    &.error .project-select__wrapper {
+        border: 1px solid #F34F39;
+    }
+}
+
+.input-field > .project-label {
+    color: $main;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    cursor: text;
+    transition: transform .2s ease-out, color .2s ease-out;
+    transform-origin: 0% 100%;
+    text-align: initial;
+    transform: translateY(18px);
+}
+
+.input-field > .project-label.active {
+    transform: translateY(5px) scale(.8);
+    transform-origin: 0 0;
+}
