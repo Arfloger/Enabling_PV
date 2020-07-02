@@ -10,3 +10,11 @@
         object-fit: contain;
     }
 }
+
+@media screen and (max-width: $smTabletWidth) {
+    .logo {
+        &__img {
+            width: 122px;
+        }
+    }
+}

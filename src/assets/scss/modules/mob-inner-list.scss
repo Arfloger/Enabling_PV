@@ -1,0 +1,32 @@
+.mob-inner-list {
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-top: 10px;
+    margin-right: -30px;
+
+    &__item {
+        padding-left: 0;
+
+        &::before {
+            display: none;
+        }
+    }
+    &__link {
+        font-family: $thirdFont;
+        display: block;
+        width: 100%;
+        padding: 7px 20px;
+        color: #fff;
+        font-size: 13px;
+        font-weight: normal;
+        transition: color .5s;
+        outline: none;
+    
+        &:hover,
+        &:focus {
+          color: $primary;
+        }
+      }
+}

@@ -50,6 +50,8 @@ header.main-header
                     ul.social__list
                         li.social__item
                             a(href="#", area-label='Мы в Инстаграм', target="_blank").social__link.social__link--inst
+                                svg(width='18', height='18')
+                                    use(xlink:href='#inst')
                 .lang
                     button(type="button", aria-label="Выбрать язык").lang__btn.lang__btn--main De
                     ul.lang__list
@@ -61,3 +63,6 @@ header.main-header
                             a(href="#", aria-label="Русский").lang__btn Ru
                         li.lang__item
                             a(href="#", aria-label="Немецкий").lang__btn.active De
+                .burger
+                    button(area-label='Открыть меню').burger-btn
+        include ./mob-menu

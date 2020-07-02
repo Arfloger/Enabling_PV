@@ -1,0 +1,35 @@
+.close-btn {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    background-image: url("../img/assets/icon-close-white.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    position: fixed;
+    top: 11px;
+    right: 20px;
+    z-index: 10;
+    transition: opacity .4s;
+
+    &:hover,
+    &:focus {
+        opacity: .7;
+    }
+
+    @media screen and (max-width: $tabletWidth) {
+        width: 40px;
+        height: 40px;
+        top: 18px;
+    }
+
+    @media screen and (max-width: $smTabletWidth) {
+        top: 10px;
+    }
+}

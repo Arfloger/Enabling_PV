@@ -1,0 +1,26 @@
+.mob-menu-back {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    outline: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 100;
+
+    &.opened {
+        display: block;
+    }
+}
+
+.mob-menu {
+    padding: 100px 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

@@ -1,0 +1,43 @@
+extends ../layout/main
+include ../utils/mixins
+block variables
+    - var pageTitle = 'Главная'
+
+block content
+
+    main
+        .container
+            h1 Контакты
+            //.contact-cards.flex-start
+            //    +contact-card(`./assets/img/mock/person-1.jpg`, `Оксана Зигерт`, `Координатор проекта`, `os@eclarion.com`, `The International Renewable Energy Agency (IRENA) is pleased to announce the launch of a youth video contest focused on the theme...`)
+            //    +contact-card(`./assets/img/mock/person-1.jpg`, `Оксана Зигерт`, `Координатор проекта`, `os@eclarion.com`, `The International Renewable Energy Agency (IRENA) is pleased to announce the launch of a youth video contest focused on the theme...`)
+            //    +contact-card(`./assets/img/mock/person-2.jpg`, `Татьяна Андреева`, `Координатор по школам и интернет-проктам`, `ta@eclarion.com`, `The International Renewable Energy Agency (IRENA) is pleased to announce the launch of a youth video contest focused on the theme...`)
+            //    +contact-card(`./assets/img/mock/person-2.jpg`, `Татьяна Андреева`, `Координатор по школам и интернет-проктам`, `ta@eclarion.com`, `The International Renewable Energy Agency (IRENA) is pleased to announce the launch of a youth video contest focused on the theme...`)
+            //h2 Свяжитесь с нами
+            //.contacts-form
+            //    h4 Enabling PV in Russia
+            //    ul.contacts.contacts-form__contacts
+            //        li.contact-item.contact-item--address Альбрехтштрассе 22, 10117 Берлин
+            //        li
+            //            a(href="#").contact-item.contact-item--site.link www.ideas-into-energy.de
+            //    b.contacts-form__text   Напишите нам!
+            //    form
+            //        .flex-between.align-start
+            //            .contacts-form__left
+            //                +error('name', 'text', 'Ваше имя')
+            //                +input('mail', 'email', 'Ваш email')
+            //                .input-field
+            //                    .project-select
+            //                        input(type="hidden").project-select__input
+            //                        .project-select__wrapper(tabindex='0')
+            //                        .project-select__label Кто вы?
+            //                        ul.project-select__list
+            //                            li.project-select__item(data-value='Представитель школы') Представитель школы
+            //                            li.project-select__item(data-value='Ученик') Ученик
+            //                            li.project-select__item(data-value='Спонсор') Спонсор
+            //                +input('theme', 'text', 'Тема')
+            //
+            //            .contacts-form__right
+            //                +textarea('message', 'Сообщение')
+            //                button(type="submit", disabled).button.contacts-form__button Отправить
+            //                //span.success-text Ваша заявка успешно отправлена! Спасибо!

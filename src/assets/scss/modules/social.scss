@@ -23,21 +23,43 @@
         height: 50px;
         background-color: #fff;
         border-radius: 50%;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 17px;
         border: 1px solid rgba(45, 78, 150, 0.1);
         box-shadow: 0px 15px 14px rgba(0, 0, 0, 0.03);
+        position: relative;
         transition: border-color .4s, opacity .4s;
-        
-        &--inst {
-            background-image: url("../img/assets/icon-inst.svg");
+
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 18px;
+            fill: $primary;
         }
 
         &:hover,
         &:focus {
             border-color: $primary;
-            opacity: .8;
+        }
+
+        &:hover svg,
+        &:focus svg {
+            fill: $active;
+        }
+    }
+}
+
+@media screen and (max-width: $tabletWidth) {
+    .social {
+        &__link {
+            width: 40px;
+            height: 40px;
+
+            &--inst {
+                svg {
+                    width: 15px;
+                }
+            }
         }
     }
 }

@@ -1,0 +1,49 @@
+.mob-menu-back
+    .mob-menu
+        button(area-label='Закрыть меню').close-btn
+        nav.nav
+            ul.nav__list
+                li.nav__item.active
+                    a.nav__link Главная
+                li.nav__item.nav__item--inner
+                    span Деятельность
+                    ul.mob-inner-list
+                        li.mob-inner-list__item
+                            a(href="#").mob-inner-list__link Деятельность 1
+                        li.mob-inner-list__item
+                            a(href="#").mob-inner-list__link Деятельность 2
+                        li.mob-inner-list__item
+                            a(href="#").mob-inner-list__link Деятельность 3
+                li.nav__item.nav__item--inner
+                    span Темы
+                    ul.mob-inner-list
+                        li.mob-inner-list__item
+                            a(href="#").mob-inner-list__link Темы 1
+                        li.mob-inner-list__item
+                            a(href="#").mob-inner-list__link Темы 2
+                        li.mob-inner-list__item
+                            a(href="#").mob-inner-list__link Темы 3
+                li.nav__item
+                    a(href="#").nav__link Проекты
+                li.nav__item
+                    a(href="#").nav__link Поиск партнеров
+                li.nav__item
+                    a(href="#").nav__link Статьи
+                li.nav__item
+                    a(href="#").nav__link Календарь
+                li.nav__item
+                    a(href="#").nav__link О нас
+                li.nav__item
+                    a(href="#").nav__link Контакты
+
+        .mob-social
+            ul.mob-social__list
+                li.mob-social__item
+                    a(href="#").mob-social__link.mob-social__link--inst
+                        svg(width='18', height='18')
+                            use(xlink:href='#inst')
+                        | instagramaccount
+                li.mob-social__item
+                    svg(width='14', height='20')
+                        use(xlink:href='#pin')
+                    | Альбрехтштрассе 22, 10117 Берлин
