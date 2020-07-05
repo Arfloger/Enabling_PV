@@ -1,0 +1,15 @@
+extends ../layout/main
+include ../utils/mixins
+block variables
+    - var pageTitle = 'Главная'
+
+block content
+
+    main
+        .container
+            h1 Применение
+                .use-grid
+                    +card(`./assets/img/mock/filed-of-use-1.jpg`, `Пример применения`)
+                    +card(`./assets/img/mock/filed-of-use-2.jpg`, `Пример применения`)
+                    +card(`./assets/img/mock/filed-of-use-3.jpg`, `Пример применения`)
+                    +card(`./assets/img/mock/filed-of-use-4.jpg`, `Пример применения`)

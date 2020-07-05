@@ -26,4 +26,12 @@ mixin contact-card(src, title, pos, link, descr)
                 p.contact-card__descr= descr
                 a(href="#").contact-card__link.link= link
 
+mixin card(src, title)
+    article.card
+        a(href="#").card__link
+            .card__img-wrap
+                img(src= src, width="572", alt= title).card__img
+            .card__wrapper
+                .h2.card__title= title
+
 

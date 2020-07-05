@@ -1,0 +1,19 @@
+extends ../layout/main
+include ../utils/mixins
+block variables
+    - var pageTitle = 'Главная'
+
+block content
+
+    main
+        .container
+            h1 Регионы
+            .regions-grid
+                +card(`./assets/img/mock/region-1.jpg`, `Берлин`)
+                +card(`./assets/img/mock/region-2.jpg`, `Москва`)
+                +card(`./assets/img/mock/region-3.jpg`, `Калининградская область`)
+                +card(`./assets/img/mock/region-4.jpg`, `Краснодарский край`)
+                +card(`./assets/img/mock/region-5.jpg`, `Республика Башкортостан`)
+                +card(`./assets/img/mock/region-6.jpg`, `Ульяновская область`)
+                +card(`./assets/img/mock/region-7.jpg`, `Самарская область`)
+                +card(`./assets/img/mock/region-8.jpg`, `Республика Саха/ Якутия`)

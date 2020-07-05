@@ -5,3 +5,15 @@
     margin-left: 5px;
   }
 }
+
+@media screen and (max-width: $smDesktopWidth) {
+  .main-footer {
+    padding: 25px 0 30px;
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .main-footer {
+    padding: 20px 0;
+  }
+}
