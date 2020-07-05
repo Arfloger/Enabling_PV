@@ -23,3 +23,11 @@
         border: 1px solid $primary;
     }
 }
+
+@media screen and (max-width: $smTabletWidth) {
+    .project-input {
+        height: 40px;
+        padding: 16px 23px 5px;
+        font-size: 12px;
+    }
+}

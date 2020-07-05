@@ -116,8 +116,23 @@
             cursor: pointer;
             background-color: #f3f4f5;
         }
-        @media screen and (max-width: $smTabletWidth) {
-            font-size: 14px;
+    }
+}
+
+@media screen and (max-width: $smTabletWidth) {
+    .project-select {
+
+        &__wrapper {
+            height: 40px;
+        }
+
+        &__list {
+            top: 37px;
+        }
+
+        &__label {
+            font-size: 12px;
+            transform: translateY(13px);
         }
     }
 }

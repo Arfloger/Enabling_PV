@@ -21,6 +21,10 @@ body {
   overflow-wrap: break-word;
   word-wrap: break-word;
   background-color: $back;
+
+  @media screen and (max-width: $smDesktopWidth) {
+    font-size: 12px;
+  }
 }
 
 h1,
@@ -167,4 +171,8 @@ main {
   margin: 0 auto;
   padding: 0 15px;
   position: relative;
+
+  @media screen and (max-width: $phoneWidth) {
+    padding: 0 10px;
+  }
 }

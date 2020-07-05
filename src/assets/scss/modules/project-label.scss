@@ -2,3 +2,9 @@
     color: #646971;
     font-size: 16px;
 }
+
+@media screen and (max-width: $smTabletWidth) {
+    .project-label {
+        font-size: 12px;
+    }
+}

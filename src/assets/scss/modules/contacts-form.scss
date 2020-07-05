@@ -1,5 +1,5 @@
 .contacts-form {
-  padding: 58px 50px;
+  padding: 5% 4%;
   margin: 45px 0 20px;
   font-family: $primaryFont;
   background: #FFFFFF;
@@ -26,5 +26,44 @@
 
   &__button {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: $smDesktopWidth) {
+  .contacts-form {
+    margin-top: 20px;
+    padding: 4% 3%;
+
+    &__text {
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+
+    &__pos {
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: $smTabletWidth) {
+  .contacts-form {
+    display: block;
+
+    &__left,
+    &__right {
+      width: 100%;
+    }
+
+    &__right {
+      .input-field:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .contacts-form {
+    padding: 20px 15px;
   }
 }

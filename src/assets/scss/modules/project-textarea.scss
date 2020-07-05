@@ -24,3 +24,10 @@
         border: 1px solid $primary;
     }
 }
+
+@media screen and (max-width: $smTabletWidth) {
+    .project-textarea {
+        height: 130px;
+        font-size: 12px;
+    }
+}

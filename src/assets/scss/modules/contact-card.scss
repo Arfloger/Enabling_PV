@@ -1,26 +1,35 @@
 .contact-card {
-  display: flex;
   width: calc(50% - 30px);
   margin: 10px 15px;
-  align-items: flex-start;
-  padding: 30px;
+  padding: 2.5%;
   background-color: #fff;
   border: 1px solid rgba(45, 78, 150, 0.1);
   border-radius: 10px;
   box-shadow: 0px 15px 14px rgba(0, 0, 0, 0.03);
 
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+
   &__img-wrapper {
-    width: 150px;
-    margin-right: 30px;
+    width: 29.5%;
+    padding-top: 40%;
+    margin-right: 6%;
     flex-shrink: 0;
     border-radius: 5px;
     overflow: hidden;
+    position: relative;
   }
 
   &__img {
-    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
   }
 
@@ -34,7 +43,7 @@
   }
 
   &__descr {
-    margin: 22px 0;
+    margin: 7% 0;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
@@ -45,5 +54,59 @@
 
   &__link {
     font-size: 18px;
+  }
+}
+
+@media screen and (max-width: $smDesktopWidth) {
+  .contact-card {
+    width: calc(50% - 22px);
+    &:nth-child(odd) {
+      margin-right: 7px;
+    }
+
+    &:nth-child(even) {
+      margin-left: 7px;
+    }
+
+    &__title {
+      font-size: 16px;
+    }
+
+    &__link {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: $smTabletWidth) {
+  .contact-card {
+    width: 100%;
+    margin: 10px 0;
+
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
+
+    &:nth-child(even) {
+      margin-left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .contact-card {
+    padding: 15px;
+
+    &__container {
+      width: 70vw;
+      display: block;
+    }
+
+    &__img-wrapper {
+      width: 100%;
+      padding-top: 130%;
+      margin-right: 0;
+      margin-bottom: 14px;
+    }
   }
 }

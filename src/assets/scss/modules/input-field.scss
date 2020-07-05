@@ -26,3 +26,9 @@
     transform: translateY(5px) scale(.8);
     transform-origin: 0 0;
 }
+
+@media screen and (max-width: $smTabletWidth) {
+    .input-field > .project-label {
+        transform: translateY(13px);
+    }
+}
