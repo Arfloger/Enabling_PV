@@ -1,0 +1,17 @@
+extends ../layout/main
+include ../utils/mixins
+block variables
+    - var pageTitle = 'Главная'
+
+block content
+
+    main
+        .container
+            h1 Поддержка
+            .support-grid
+                +support-card(`./assets/img/mock/logo-1.png`, 186,  `www.ideas-into-energy.org`, `Ideas into energy gGmbH`)
+                +support-card(`./assets/img/mock/logo-2.png`, 160,  `www.goethe.de`, `Goethe Institut`)
+                +support-card(`./assets/img/mock/logo-3.png`, 107,  `www.pasch-net.de`, `PASCH`)
+                +support-card(`./assets/img/mock/logo-4.png`, 206,  `www.eclareon.com`, `Eclareon GmbH`)
+                +support-card(`./assets/img/mock/logo-5.png`, 196,  `www.solar23.com`, `SOLAR23 GmbH`)
+                +support-card(`./assets/img/mock/logo-6.png`, 87,  `www.solarwirtschaft.de`, `BSW-Solar e.V.`)
