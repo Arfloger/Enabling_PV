@@ -7,7 +7,6 @@
     padding: 10px;
     color: $main;
     font-size: 22px;
-    font-family: $primaryFont;
     background: #FFFFFF;
     border: 1px solid rgba(45, 78, 150, 0.1);
     border-radius: 10px;
@@ -20,6 +19,7 @@
   }
 
   &__wrapper {
+    padding: 20px 0 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,7 +29,6 @@
   &__img-wrap {
     width: 100%;
     padding-top: 54%;
-    margin-bottom: 30px;
     border-radius: 5px;
     position: relative;
     overflow: hidden;
@@ -46,24 +45,41 @@
     object-fit: cover;
   }
   &__title {
-    padding: 0 40px 0 5px;
-    margin: 20px 0;
+    font-family: $primaryFont;
+    padding-left: 5px;
+    margin: 0 0 10px 0;
     font-weight: bold;
-    position: relative;
 
-    &::before {
-      content: "";
-      width: 12px;
-      height: 7px;
-      background-image: url("../img/assets/icon-select-arrow.svg");
-      background-repeat: no-repeat;
-      background-position: 50%;
-      background-size: 12px;
-      position: absolute;
-      top: 50%;
-      right: 10px;
-      transform: translateY(-50%) rotate(-90deg);
+    &--arrow {
+      padding: 0 40px 0 5px;
+      margin: 10px 0;
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 12px;
+        height: 7px;
+        background-image: url("../img/assets/icon-select-arrow.svg");
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: 12px;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%) rotate(-90deg);
+      }
     }
+  }
+
+  &__date {
+    margin-top: auto;
+    padding-left: 25px;
+    color: $secondary;
+    font-size: 14px;
+    background-image: url("../img/assets/icon-calendar.svg");
+    background-repeat: no-repeat;
+    background-position: center left 5px;
+    background-size: 15px;
   }
 }
 
@@ -78,9 +94,16 @@
     }
 
     &__title {
-      &::before {
-        background-size: 10px;
+      &--arrow {
+        &::before {
+          background-size: 10px;
+        }
       }
+    }
+
+    &__date {
+      font-size: 12px;
+      background-size: 13px;
     }
   }
 }

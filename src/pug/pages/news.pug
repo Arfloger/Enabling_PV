@@ -1,0 +1,19 @@
+extends ../layout/main
+include ../utils/mixins
+block variables
+    - var pageTitle = 'Главная'
+
+block content
+
+    main
+        .container
+            h1 Новости
+            .main-grid.news
+                +news-card(`./assets/img/mock/news-1.jpg`, `Доля ВИЭ в выработке электроэнергии в Германии достигла 40%`)
+                +news-card(`./assets/img/mock/news-2.jpg`, `В Калининграде установлена пятая солнечная система`)
+                +news-card(`./assets/img/mock/news-3.jpg`, `В Уфе открылась четвертая солнечная школа`)
+                +news-card(`./assets/img/mock/news-1.jpg`, `Доля ВИЭ в выработке электроэнергии в Германии достигла 40%`)
+                +news-card(`./assets/img/mock/news-2.jpg`, `В Калининграде установлена пятая солнечная система`)
+                +news-card(`./assets/img/mock/news-3.jpg`, `В Уфе открылась четвертая солнечная школа`)
+            .pagination-wrap
+                include ../includes/pagination

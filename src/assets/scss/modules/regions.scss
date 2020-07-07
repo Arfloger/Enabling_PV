@@ -1,0 +1,15 @@
+.regions {
+  margin: 50px 0 20px;
+}
+
+@media screen and (max-width: $tabletWidth) {
+  .regions  {
+    margin: 35px 0 20px;
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .regions {
+    margin: 25px 0 10px;
+  }
+}

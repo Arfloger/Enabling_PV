@@ -32,7 +32,16 @@ mixin card(src, title)
             .card__img-wrap
                 img(src= src, width="572", alt= title).card__img
             .card__wrapper
+                .h2.card__title.card__title--arrow= title
+
+mixin news-card(src, title)
+    article.card
+        a(href="#").card__link
+            .card__img-wrap
+                img(src= src, width="572", alt= title).card__img
+            .card__wrapper
                 .h2.card__title= title
+                time.card__date 19.02.2020
 
 mixin support-card(src, width, link, title)
     article.support-card

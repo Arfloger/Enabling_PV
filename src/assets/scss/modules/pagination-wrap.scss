@@ -1,0 +1,9 @@
+.pagination-wrap {
+  margin: 70px auto 40px;
+}
+
+@media screen and (max-width: $tabletWidth) {
+  .pagination-wrap {
+    margin: 40px 15px;
+  }
+}

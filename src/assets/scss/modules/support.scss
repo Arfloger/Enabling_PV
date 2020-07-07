@@ -1,0 +1,16 @@
+.support {
+  margin: 50px 0 20px;
+}
+
+@media screen and (max-width: $tabletWidth) {
+  .support  {
+    margin: 35px 0 20px;
+  }
+}
+
+
+@media screen and (max-width: $phoneWidth) {
+  .support {
+    margin: 25px 0 10px;
+  }
+}

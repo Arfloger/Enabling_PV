@@ -1,0 +1,59 @@
+.pagination {
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    color: $primary;
+    font-size: 16px;
+    line-height: 3;
+  }
+
+  &__item {
+    flex-shrink: 0;
+    padding-left: 0;
+    margin: 0 5px;
+
+    &.active .pagination__link {
+        color: $main;
+        border-color: rgba(45, 78, 150, 0.1);
+        cursor: default;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    color: $primary;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: color .4s, border .4s;
+
+    &:hover,
+    &:focus {
+        color: $active;
+        border: 1px solid $active;
+    }
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .pagination {
+
+    &__list {
+      font-size: 12px;
+      line-height: 2.3;
+    }
+
+    &__link {
+      width: 30px;
+      height: 30px;
+    }
+
+  }
+}
