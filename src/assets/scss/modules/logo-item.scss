@@ -1,0 +1,36 @@
+.logo-item {
+  width: 14.2%;
+  padding: 10px;
+  flex-shrink: 0;
+
+  &:first-child {
+    padding-left: 0;
+
+    .logo-item__img {
+      left: 0;
+      transform: translate(0, -50%);
+    }
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+
+  &__link {
+    display: block;
+    padding-top: 50%;
+    position: relative;
+  }
+
+  &__img {
+    max-width: none;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+  }
+}

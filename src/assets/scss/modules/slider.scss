@@ -1,0 +1,68 @@
+.slider {
+  margin: 0 -10px;
+
+  &__wrap {
+    padding: 0 10px;
+  }
+
+  &__img-wrap {
+    padding-top: 64%;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+  }
+
+  &__dots {
+    min-width: 150px;
+    margin-left: 20px;
+    position: relative;
+
+    .slick-dots {
+      text-align: left;
+      bottom: 50%;
+      transform: translateY(50%);
+    }
+  }
+
+  &__arrow {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    outline: none;
+
+    svg {
+      fill: $main;
+      transition: fill .4s;
+    }
+
+    &:hover,
+    &:focus {
+      svg {
+        fill: $active;
+      }
+    }
+  }
+
+  &__prev {
+    left: -40px;
+    transform: rotate(90deg) translateY(50%);
+  }
+
+  &__next {
+    right: -40px;
+    transform: rotate(-90deg) translateY(50%);
+  }
+}

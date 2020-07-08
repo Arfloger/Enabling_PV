@@ -1,0 +1,17 @@
+.download-btn {
+  display: flex;
+  align-items: center;
+
+  .btn {
+    margin-right: 20px;
+  }
+
+  &:hover .btn {
+    border-color: $active;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: $active;
+  }
+}

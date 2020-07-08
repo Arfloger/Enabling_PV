@@ -7,6 +7,9 @@
 
 @import "modules/link";
 @import "modules/button";
+@import "modules/btn";
+@import "modules/date";
+@import "modules/back";
 
 @import "modules/burger-btn";
 @import "modules/close-btn";
@@ -30,22 +33,34 @@
 @import "modules/main-footer";
 @import "modules/nav";
 @import "modules/inner-list";
+
 @import "modules/logo";
 @import "modules/lang";
 @import "modules/social";
 @import "modules/arrow";
+@import "modules/download-btn";
 
-@import "modules/contact-cards";
-@import "modules/contact-card";
+@import "modules/pagination-wrap";
+@import "modules/pagination";
+@import "modules/article";
+
 @import "modules/contacts";
 @import "modules/contacts-form";
 @import "modules/contact-item";
 
 @import "modules/card";
 @import "modules/support-card";
-@import "modules/pagination-wrap";
-@import "modules/pagination";
+@import "modules/contact-cards";
+@import "modules/contact-card";
+
 @import "modules/use-block";
 @import "modules/regions";
 @import "modules/support";
 @import "modules/news";
+@import "modules/logos";
+
+@import "modules/logo-item";
+
+@import "modules/slick";
+@import "modules/slider-wrap";
+@import "modules/slider";

@@ -41,7 +41,7 @@ mixin news-card(src, title)
                 img(src= src, width="572", alt= title).card__img
             .card__wrapper
                 .h2.card__title= title
-                time.card__date 19.02.2020
+                time.date.card__date 19.02.2020
 
 mixin support-card(src, width, link, title)
     article.support-card
@@ -50,4 +50,8 @@ mixin support-card(src, width, link, title)
         h2.support-card__title= title
         a(href="#").support-card__link.link= link
 
+mixin logo-item(src, width)
+    .logo-item
+        a(href="#").logo-item__link
+            img(src= src, width= width, alt="logo alt").logo-item__img
 

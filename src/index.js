@@ -1,4 +1,4 @@
-// import 'slick-carousel'
+import 'slick-carousel'
 //import '@fancyapps/fancybox'
 
 // import './js/common'
@@ -11,3 +11,15 @@
 
 import './assets/scss/main.scss'
 import './assets/css/main.css'
+
+$(`.slider`).slick({
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    arrows: true,
+    dots: true,
+    infinite: true,
+    variableWidth: false,
+    appendDots: $(`.slider__dots`),
+    prevArrow: $(`.slider__prev`),
+    nextArrow: $(`.slider__next`),
+})
