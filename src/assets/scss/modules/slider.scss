@@ -39,9 +39,10 @@
     background-color: transparent;
     border: none;
     position: absolute;
-    top: 50%;
+    top: calc(50% - 6px);
     cursor: pointer;
     outline: none;
+    z-index: 10;
 
     svg {
       fill: $main;
@@ -58,11 +59,42 @@
 
   &__prev {
     left: -40px;
-    transform: rotate(90deg) translateY(50%);
+    transform: rotate(90deg);
   }
 
   &__next {
     right: -40px;
-    transform: rotate(-90deg) translateY(50%);
+    transform: rotate(-90deg);
   }
 }
+
+@media screen and (max-width: $smDesktopWidth) {
+  .slider {
+    &__prev {
+      left: 5px;
+    }
+
+    &__next {
+      right: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .slider {
+    &__wrap {
+      width: 70vw;
+    }
+
+    &__arrow {
+      display: none !important;
+    }
+
+    &__dots {
+      .slick-dots {
+        text-align: right;
+      }
+    }
+  }
+}
+

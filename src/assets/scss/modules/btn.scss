@@ -28,3 +28,14 @@
     fill: $active;
   }
 }
+
+@media screen and (max-width: $tabletWidth) {
+  .btn {
+    width: 40px;
+    height: 40px;
+
+    svg {
+      width: 12px;
+    }
+  }
+}

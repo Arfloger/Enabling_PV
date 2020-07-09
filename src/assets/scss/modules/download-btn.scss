@@ -1,9 +1,10 @@
 .download-btn {
   display: flex;
   align-items: center;
+  font-size: 16px;
 
   .btn {
-    margin-right: 20px;
+    margin-right: 10px;
   }
 
   &:hover .btn {
@@ -13,5 +14,11 @@
   &:hover svg,
   &:focus svg {
     fill: $active;
+  }
+}
+
+@media screen and (max-width: $tabletWidth) {
+  .download-btn {
+    font-size: 12px;
   }
 }
