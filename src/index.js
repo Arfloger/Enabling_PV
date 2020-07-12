@@ -7,6 +7,7 @@ import 'slick-carousel'
 // import './js/menu'
 // import './js/header'
 // import './js/contact-card'
+import './js/scroll-item'
 
 
 import './assets/scss/main.scss'

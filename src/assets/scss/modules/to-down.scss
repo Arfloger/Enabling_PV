@@ -1,0 +1,29 @@
+.to-down {
+  font-size: 18px;
+  position: relative;
+  padding-left: 25px;
+
+  svg {
+    fill: $primary;
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%);
+    transition: fill .4s;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: $active;
+  }
+}
+
+@media screen and (max-width: $tabletWidth) {
+  .to-down {
+    font-size: 14px;
+
+    svg {
+      width: 12px;
+    }
+  }
+}

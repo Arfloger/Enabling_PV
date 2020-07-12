@@ -2,21 +2,41 @@
   font-size: 18px;
 
   &__title {
-    max-width: 80%;
+    &--part {
+      max-width: 80%;
+    }
   }
 
   &__details {
     margin-bottom: 20px;
+    flex-wrap: nowrap;
   }
 
-  &__subtitle {
-    margin: 20px 0;
-    font-size: 22px;
+  &__points {
+    width: auto;
+    * {
+      margin-right: 45px;
+    }
+  }
+
+  &__points-wrap {
+    width: auto;
+    * {
+      margin-right: 45px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
   }
 
   &__wrap {
     flex-wrap: nowrap;
     margin-bottom: 40px;
+  }
+
+  &__materials-wrap {
+    margin-bottom: 20px;
   }
 
   &__img-wrap {
@@ -27,6 +47,10 @@
     border-radius: 5px;
     overflow: hidden;
     position: relative;
+
+    &--mode {
+      width: 49%;
+    }
   }
 
   &__img {
@@ -42,15 +66,6 @@
 
   &__info {
     flex-grow: 1;
-  }
-
-  &__item {
-    margin: 10px 0 15px;
-    span {
-      display: block;
-      color: $secondary;
-      font-size: 14px;
-    }
   }
 
   &__logos {
@@ -72,26 +87,23 @@
     font-size: 16px;
 
     &__title {
-      max-width: 100%;
+      &--part {
+        max-width: 100%;
+      }
     }
 
     &__details {
       margin-bottom: 5px;
     }
 
+    &__points {
+      * {
+        margin-right: 25px;
+      }
+    }
+
     &__wrap {
       margin-bottom: 20px;
-    }
-
-    &__subtitle {
-      margin: 15px 0;
-      font-size: 18px;
-    }
-
-    &__item {
-      span {
-        font-size: 12px;
-      }
     }
 
     p {
@@ -131,10 +143,6 @@
 
     &__prewrap {
       justify-content: space-between;
-    }
-
-    &__subtitle {
-      font-size: 17px;
     }
   }
 }

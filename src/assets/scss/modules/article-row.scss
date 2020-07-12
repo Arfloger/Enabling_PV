@@ -1,0 +1,17 @@
+.article-row {
+  margin: 10px 0 15px;
+
+  span {
+    display: block;
+    color: $secondary;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: $tabletWidth) {
+  .article-row {
+    span {
+      font-size: 12px;
+    }
+  }
+}

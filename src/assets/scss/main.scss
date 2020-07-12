@@ -8,8 +8,11 @@
 @import "modules/link";
 @import "modules/button";
 @import "modules/btn";
-@import "modules/date";
+@import "modules/pin";
+@import "modules/event-type";
 @import "modules/back";
+@import "modules/breadcrums";
+@import "modules/to-down";
 
 @import "modules/burger-btn";
 @import "modules/close-btn";
@@ -38,11 +41,17 @@
 @import "modules/lang";
 @import "modules/social";
 @import "modules/arrow";
-@import "modules/download-btn";
+@import "modules/btn-mode";
 
 @import "modules/pagination-wrap";
 @import "modules/pagination";
+
 @import "modules/article";
+@import "modules/article-subtitle";
+@import "modules/article-row";
+@import "modules/schedule";
+@import "modules/materials-wrap";
+@import "modules/materials";
 
 @import "modules/contacts";
 @import "modules/contacts-form";

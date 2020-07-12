@@ -1,0 +1,13 @@
+.materials-wrap {
+  flex-wrap: nowrap;
+
+  * {
+    flex-shrink: 0;
+  }
+}
+
+@media screen and (max-width: $tabletWidth) {
+  .materials-wrap {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,60 @@
+.breadcrumbs {
+  margin: 10px 0 30px;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    padding-left: 0;
+  }
+
+  &__link {
+    display: block;
+    padding-right: 20px;
+    color: $main;
+    opacity: .8;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: color .4s, opacity .4s;
+    position: relative;
+
+    svg {
+      fill: $main;
+      opacity: .8;
+      position: absolute;
+      top: 50%;
+      right: 5px;
+      transform: translateY(-50%) rotate(-90deg);
+      transition: fill .4s, opacity .4s;
+    }
+
+    &:hover,
+    &:focus {
+      color: $active;
+      opacity: 1;
+    }
+
+    &:hover svg,
+    &:focus svg {
+      fill: $active;
+      opacity: 1;
+    }
+  }
+
+  &__link:not([href]) {
+    color: $active;
+    opacity: 1;
+
+    svg {
+      display: none;
+    }
+  }
+
+}

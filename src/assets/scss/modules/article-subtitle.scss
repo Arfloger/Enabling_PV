@@ -1,0 +1,19 @@
+.article-subtitle {
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: left;
+}
+
+@media screen and (max-width: $tabletWidth) {
+  .article-subtitle {
+    margin: 15px 0;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .article-subtitle {
+    font-size: 17px;
+  }
+}

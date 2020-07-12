@@ -1,0 +1,65 @@
+.schedule {
+  width: 100%;
+  border-collapse: collapse;
+
+  &__group + tr {
+    border-top: 1px solid transparent;
+  }
+
+  td, th {
+    padding: 10px 10px 15px 0;
+    vertical-align: top;
+
+    &:first-child {
+      width: 85px;
+    }
+  }
+
+  th {
+    text-align: left;
+    text-transform: uppercase;
+    opacity: .8;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.schedule tr:not(.schedule__group) {
+  border-top: 1px solid rgba(45, 78, 150, 0.1);
+}
+
+@media screen and (max-width: $tabletWidth)  {
+  .schedule {
+    td, th {
+      padding: 5px 10px 7px 0;
+      vertical-align: top;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    th {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .schedule {
+    td, th {
+      padding: 5px 10px 7px 0;
+
+      &:first-child {
+        width: 75px;
+      }
+
+    }
+
+    th {
+      font-size: 12px;
+    }
+  }
+}

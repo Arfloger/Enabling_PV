@@ -1,0 +1,40 @@
+.pin {
+  padding: 7px 0 5px 25px;
+  margin: 3px 0;
+  color: $main;
+  font-size: 14px;
+  line-height: 1;
+  background-repeat: no-repeat;
+  background-position: center left 5px;
+  background-size: 15px;
+  position: relative;
+
+  svg {
+    fill: $secondary;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+  }
+
+  &--size {
+    padding: 7px 0 5px 30px;
+    font-size: 18px;
+    background-size: 19px;
+  }
+
+  &--date {
+    background-image: url("../img/assets/icon-calendar.svg");
+  }
+  
+  &--time {
+    background-image: url("../img/assets/icon-clock.svg");
+  }
+}
+
+@media screen and (max-width: $tabletWidth) {
+  .pin {
+    font-size: 12px;
+    background-size: 13px;
+  }
+}

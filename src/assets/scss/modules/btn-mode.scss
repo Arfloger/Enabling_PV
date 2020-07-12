@@ -1,4 +1,4 @@
-.download-btn {
+.btn-mode {
   display: flex;
   align-items: center;
   font-size: 16px;
@@ -18,7 +18,7 @@
 }
 
 @media screen and (max-width: $tabletWidth) {
-  .download-btn {
+  .btn-mode {
     font-size: 12px;
   }
 }

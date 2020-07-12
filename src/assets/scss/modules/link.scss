@@ -3,8 +3,35 @@
   text-decoration: none;
   transition: color .4s;
 
+&--mode-file {
+  padding-left: 25px;
+  background-image: url("../img/assets/icon-file.svg");
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: 16px;
+}
+
   &:hover,
   &:focus {
    color: $active
+  }
+}
+
+@media screen and (max-width: $tabletWidth) {
+  .link {
+    &--mode-file {
+      font-size: 16px;
+      background-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .link {
+    &--mode-file {
+      padding-left: 20px;
+      font-size: 14px;
+      background-size: 12px;
+    }
   }
 }
