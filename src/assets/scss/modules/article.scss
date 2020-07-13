@@ -94,6 +94,10 @@
   &__slider {
     margin: 20px 0 0;
   }
+
+  &__slider-mode {
+    margin: 40px 0;
+  }
 }
 
 
@@ -158,6 +162,10 @@
 
     &__prewrap {
       justify-content: space-between;
+    }
+
+    &__slider-mode {
+      margin: 20px 0;
     }
   }
 }
