@@ -64,11 +64,21 @@ mixin table-row()
                 | Europe has been a pioneer in the development of ocean energy technologies
                 span Константин Константинопольский, главный инженер  |  EuroSolar Russia
 
-mixin company(src, width, name, site, deskr)
-    article.company
-        .company__row
-            img(src= src, alt= name, width= width).company__img
-            .company__wrapper
-                h2.company__name= name
-                a(href='#').company__link= site
-                p.company__deskr= deskr
+mixin company-card(src, width, name, site, deskr)
+    article.company-card
+        .company-card__row
+            img(src= src, alt= name, width= width).company-card__img
+            .company-card__wrapper
+                h2.company-card__name= name
+                a(href='#').company-card__link= site
+                p.company-card__deskr= deskr
+
+mixin project-card(src, width, name, deskr)
+    article.project-card
+        a(href="#").project-card__link
+            .project-card__row
+                .project-card__img-wrap
+                    img(src= src, alt= name, width= width).project-card__img
+                .project-card__wrapper
+                    h2.project-card__name= name
+                    p.project-card__deskr= deskr

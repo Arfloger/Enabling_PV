@@ -1,0 +1,9 @@
+.title-gap {
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: $tabletWidth) {
+  .title-gap {
+    margin-bottom: 20px;
+  }
+}

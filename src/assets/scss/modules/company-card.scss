@@ -1,4 +1,4 @@
-.company {
+.company-card {
     padding: 20px 50px;
     margin-bottom: 20px;
     background-color: #fff;
@@ -44,7 +44,7 @@
 }
 
 @media screen and (max-width: $smDesktopWidth) {
-    .company {
+    .company-card {
         padding: 30px 40px;
 
         &__wrapper {
@@ -54,15 +54,11 @@
         &__img {
             width: 150px;
         }
-
-        &:last-of-type {
-            margin-bottom: 70px;
-        }
     }
 } 
 
 @media screen and (max-width: $smTabletWidth) {
-    .company {
+    .company-card {
         padding: 30px 15px;
 
         &__wrapper {
@@ -80,15 +76,11 @@
         &__link {
             font-size: 13px;
         }
-
-        &:last-of-type {
-            margin-bottom: 30px;
-        }
     }
 }
 
 @media screen and (max-width: $phoneWidth) {
-    .company {
+    .company-card {
         margin-bottom: 10px;
 
         &__row {
