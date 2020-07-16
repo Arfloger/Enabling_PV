@@ -1,14 +1,14 @@
-import 'slick-carousel'
+// import 'slick-carousel'
 //import '@fancyapps/fancybox'
 
-// import './js/common'
-// import './js/lang'
-// import './js/select'
-// import './js/menu'
-// import './js/header'
-// import './js/contact-card'
-import './js/slider'
-import './js/scroll-item'
+ // import './js/common'
+ // import './js/lang'
+ // import './js/select'
+ // import './js/menu'
+ // import './js/header'
+ // import './js/contact-card'
+// import './js/slider'
+// import './js/scroll-item'
 
 
 import './assets/scss/main.scss'

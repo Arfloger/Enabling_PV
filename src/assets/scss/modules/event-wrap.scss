@@ -1,0 +1,13 @@
+.event-wrap {
+  * {
+    margin: 0 !important;
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .event-wrap {
+    h2 {
+      font-size: 14px;
+    }
+  }
+}

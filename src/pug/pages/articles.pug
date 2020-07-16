@@ -1,0 +1,14 @@
+extends ../layout/main
+include ../utils/mixins
+block variables
+    - var pageTitle = 'Главная'
+
+block content
+
+    main
+        .container
+            h1 Статьи
+            .card-wrap
+                +article-card(`./assets/img/mock/cover-1.jpg`, 150, `Energy subsidies evolution in the global energy transformation to 2050`, `The International Renewable Energy Agency (IRENA) is pleased to announce the launch of a youth video contest focused on the theme ‘Renewable Energy in the Time of COVID-19: Youth Actions for Recovery’. The winner or winners of the youth video contest will get a chance to engage with and contribute to the...`)
+                +article-card(`./assets/img/mock/cover-2.jpg`, 150, `Global Renewables Outlook: Energy transformation 2050`, `The International Renewable Energy Agency (IRENA) is pleased to announce the launch of a youth video contest focused on the theme ‘Renewable Energy in the Time of COVID-19: Youth Actions for Recovery’. The winner or winners of the youth video contest will get a chance to engage with and contribute to the...`)
+                +article-card(`./assets/img/mock/cover-3.jpg`, 150, `Renewable Capacity Statistics 2020`, `The International Renewable Energy Agency (IRENA) is pleased to announce the launch of a youth video contest focused on the theme ‘Renewable Energy in the Time of COVID-19: Youth Actions for Recovery’. The winner or winners of the youth video contest will get a chance to engage with and contribute to the...`)

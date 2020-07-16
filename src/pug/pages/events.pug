@@ -1,0 +1,30 @@
+extends ../layout/main
+include ../utils/mixins
+block variables
+    - var pageTitle = 'Главная'
+
+block content
+
+    main
+        .container
+            h1 События
+            .flex-between.event-wrap
+                h2 Предстоящие события
+                a(href="#").back.back__mode
+                    svg(width='12', height='8')
+                        use(xlink:href='#arrow')
+                    | Все события
+            .card-wrap
+                +event-card(`./assets/img/mock/back-1.jpg`, 325, `IRENA Youth Video Contest: Renewable Energy in the ime of COVID-19`, `deskrThe International Renewable Energy Agency (IRENA) is pleased to announce the launch of a youth video contest focused on the theme ‘Renewable Energy in the Time of COVID-19: Youth Actions for Recovery’. The winner or winners of the youth video contest will get a chance to engage with and contribute to the...`)
+                +event-card(`./assets/img/mock/back-1.jpg`, 325, `IRENA Youth Video Contest: Renewable Energy in the ime of COVID-19`, `deskrThe International Renewable Energy Agency (IRENA) is pleased to announce the launch of a youth video contest focused on the theme ‘Renewable Energy in the Time of COVID-19: Youth Actions for Recovery’. The winner or winners of the youth video contest will get a chance to engage with and contribute to the...`)
+                +event-card(`./assets/img/mock/back-1.jpg`, 325, `IRENA Youth Video Contest: Renewable Energy in the ime of COVID-19`, `deskrThe International Renewable Energy Agency (IRENA) is pleased to announce the launch of a youth video contest focused on the theme ‘Renewable Energy in the Time of COVID-19: Youth Actions for Recovery’. The winner or winners of the youth video contest will get a chance to engage with and contribute to the...`)
+            .flex-between.event-wrap
+                h2 Прошедшие события
+                a(href="#").back.back__mode
+                    svg(width='12', height='8')
+                        use(xlink:href='#arrow')
+                    | Все события
+            .card-wrap
+                +event-card(`./assets/img/mock/back-1.jpg`, 325, `IRENA Youth Video Contest: Renewable Energy in the ime of COVID-19`, `deskrThe International Renewable Energy Agency (IRENA) is pleased to announce the launch of a youth video contest focused on the theme ‘Renewable Energy in the Time of COVID-19: Youth Actions for Recovery’. The winner or winners of the youth video contest will get a chance to engage with and contribute to the...`)
+                +event-card(`./assets/img/mock/back-1.jpg`, 325, `IRENA Youth Video Contest: Renewable Energy in the ime of COVID-19`, `deskrThe International Renewable Energy Agency (IRENA) is pleased to announce the launch of a youth video contest focused on the theme ‘Renewable Energy in the Time of COVID-19: Youth Actions for Recovery’. The winner or winners of the youth video contest will get a chance to engage with and contribute to the...`)
+                +event-card(`./assets/img/mock/back-1.jpg`, 325, `IRENA Youth Video Contest: Renewable Energy in the ime of COVID-19`, `deskrThe International Renewable Energy Agency (IRENA) is pleased to announce the launch of a youth video contest focused on the theme ‘Renewable Energy in the Time of COVID-19: Youth Actions for Recovery’. The winner or winners of the youth video contest will get a chance to engage with and contribute to the...`)

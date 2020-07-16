@@ -82,3 +82,31 @@ mixin project-card(src, width, name, deskr)
                 .project-card__wrapper
                     h2.project-card__name= name
                     p.project-card__deskr= deskr
+
+mixin event-card(src, width, name, deskr)
+    article.event-card
+        a(href="#").event-card__link
+            .event-card__row
+                .event-card__img-wrap
+                    img(src= src, alt= name, width= width).event-card__img
+                .event-card__wrapper
+                    h2.event-card__name= name
+                    .event-card__details
+                        span.event-type Вебинар
+                        time.pin.pin--date 19.02.2020
+                        time.pin.pin--time 14:00
+                    p.event-card__deskr= deskr
+
+mixin article-card(src, width, name, deskr)
+    article.article-card
+        a(href="#").article-card__link
+            .article-card__row
+                .article-card__img-wrap
+                    img(src= src, alt= name, width= width).article-card__img
+                .article-card__wrapper
+                    h2.article-card__name= name
+                    .article-card__details
+                        time.pin.pin--date 19.02.2020
+                        time.pin.pin--lang Eng
+                        time.pin.pin--type Категория
+                    p.article-card__deskr= deskr

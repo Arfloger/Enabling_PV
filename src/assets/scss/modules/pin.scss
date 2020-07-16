@@ -30,6 +30,15 @@
   &--time {
     background-image: url("../img/assets/icon-clock.svg");
   }
+
+  &--lang {
+    background-image: url("../img/assets/icon-lang.svg");
+  }
+
+  &--type {
+    background-image: url("../img/assets/icon-type.svg");
+  }
+
 }
 
 @media screen and (max-width: $tabletWidth) {

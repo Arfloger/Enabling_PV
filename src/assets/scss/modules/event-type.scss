@@ -2,11 +2,26 @@
   display: inline-block;
   padding: 5px 15px;
   margin: 3px 0;
-  color: $main;
   font-size: 18px;
-  opacity: 0.8;
-  background: #D8DFEC;
+  color: rgba(84, 84, 84, .8);
+  background-color: rgba(106, 106, 106, .2);
   border-radius: 3px;
+
+  &.blue {
+    color: $main;
+    background-color: #D8DFEC;
+    opacity: 0.8;
+  }
+
+  &.red {
+    color: #853C3E;
+    background-color: #F3D4D5;
+  }
+
+  &.yellow {
+    color: #5C4509;
+    background-color: #EDE6D4;
+  }
 }
 
 @media screen and (max-width: $tabletWidth)  {

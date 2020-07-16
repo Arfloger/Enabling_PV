@@ -25,6 +25,21 @@
       fill: $active;
     }
   }
+
+  &__mode {
+    padding-left: 0;
+    padding-right: 20px;
+
+    svg {
+      fill: rgba(38, 45, 57, .8);
+      position: absolute;
+      left: auto;
+      right: 0;
+      top: calc(50% - 4px);
+      transform: rotate(-90deg);
+      transition: fill .4s;
+    }
+  }
 }
 
 @media screen and (max-width: $tabletWidth) {

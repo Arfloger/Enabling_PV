@@ -1,0 +1,119 @@
+.article-card {
+
+  &__link {
+    display: block;
+    padding: 30px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid rgba(45, 78, 150, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 15px 14px rgba(0, 0, 0, 0.03);
+    color: $main;
+    transition: box-shadow .4s;
+
+    &:hover,
+    &:focus {
+
+      box-shadow: none;
+
+      .article-card__name {
+        color: $active;
+      }
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__wrapper {
+    width: calc(100% - 17%);
+  }
+
+  &__img-wrap {
+    width: 14%;
+    padding-top: 20%;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__name {
+    margin-bottom: 10px;
+    font-family: $primaryFont;
+    color: $main;
+    font-size: 25px;
+    font-weight: bold;
+    transition: color .4s;
+  }
+
+  &__deskr {
+    margin: 20px 0;
+  }
+
+  &__details {
+    * {
+      margin-right: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: $tabletWidth) {
+  .article-card {
+
+    &__wrapper {
+      width: 79%;
+    }
+
+    &__name {
+      font-size: 20px;
+    }
+
+    &__img-wrap {
+      width: 18%;
+      padding-top: 25%;
+    }
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .article-card {
+    margin-bottom: 10px;
+
+    &__link {
+      padding: 10px;
+    }
+
+    &__row {
+      flex-wrap: wrap;
+    }
+
+    &__wrapper {
+      width: 100%;
+    }
+
+    &__img-wrap {
+      max-width: 280px;
+      width: 280px;
+      padding-top: 0;
+      margin: 0 auto 20px;
+    }
+
+    &__img {
+      display: block;
+      position: static;
+    }
+  }
+}
