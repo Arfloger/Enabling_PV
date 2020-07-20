@@ -85,7 +85,7 @@
     color: $main;
     font-size: 14px;
     text-align: center;
-    font-weight: 500;
+    font-weight:700;
     transition: color .5s;
     outline: none;
     white-space: nowrap;
@@ -111,7 +111,7 @@
   }
 }
 
-@media screen and (max-width: $smDesktopWidth) {
+@media screen and (max-width: $bigTbWidth) {
   .nav {
     &__list {
       flex-direction: column;

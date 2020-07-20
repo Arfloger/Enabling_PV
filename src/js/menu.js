@@ -36,16 +36,20 @@ $(".close-btn").click(function (evt) {
 
 $('.nav__item--inner').click(function () {
 
-    if ($(this).hasClass('active')) {
+    if ($(this).hasClass('active') && !$(this).hasClass(`checked`)) {
         $(this).removeClass('active')
         $(this).find('.mob-inner-list').slideUp()
         return
+    } else if (!$(this).hasClass(`checked`)) {
+        $('.nav__item--inner.active').find('.mob-inner-list').slideUp()
+        $('.nav__item--inner.active').removeClass('active')
+
+        $(this).addClass('active')
+        $(this).find('.mob-inner-list').slideDown()
     }
 
-    $('.nav__item--inner.active').find('.mob-inner-list').slideUp()
-    $('.nav__item--inner.active').removeClass('active')
-
-    $(this).addClass('active')
-    $(this).find('.mob-inner-list').slideDown()
-
 });
+
+$(`.mob-inner-list__link`).click(function () {
+    $(this).closest(`.nav__item--inner`).addClass(`checked`)
+})

@@ -11,10 +11,15 @@
     border: 1px solid rgba(45, 78, 150, 0.1);
     border-radius: 10px;
     box-shadow: 0px 15px 14px rgba(0, 0, 0, 0.03);
-    transition: box-shadow .4s;
+    transition: box-shadow .4s, color .4s;
 
     &:hover {
+      color: $active;
       box-shadow: 0px 15px 14px rgba(0, 0, 0, 0.06);
+    }
+
+    &:hover svg {
+      fill: $active;
     }
   }
 
@@ -44,6 +49,7 @@
     bottom: 0;
     object-fit: cover;
   }
+
   &__title {
     font-family: $primaryFont;
     padding-left: 5px;
@@ -55,18 +61,13 @@
       margin: 10px 0;
       position: relative;
 
-      &::before {
-        content: "";
-        width: 12px;
-        height: 7px;
-        background-image: url("../img/assets/icon-select-arrow.svg");
-        background-repeat: no-repeat;
-        background-position: 50%;
-        background-size: 12px;
+      svg {
+        fill: $main;
         position: absolute;
         top: 50%;
         right: 10px;
         transform: translateY(-50%) rotate(-90deg);
+        transition: fill .4s;
       }
     }
   }

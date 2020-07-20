@@ -2,12 +2,13 @@ mixin input(id, type, label)
     .input-field
         input(id= id, type= type).project-input
         label(for= id).project-label= label
+        span.error-text Неправильный email
 
 mixin error(id, type, label)
     .input-field.error
         input(id= id, type= type).project-input
         label(for= id).project-label= label
-        span.error-text Неправильный email
+        span.error-text.open Неправильный email
 
 mixin textarea(id, label)
     .input-field.error
@@ -33,6 +34,8 @@ mixin card(src, title)
                 img(src= src, width="572", alt= title).card__img
             .card__wrapper
                 .h2.card__title.card__title--arrow= title
+                    svg(width='18', height='9')
+                        use(xlink:href='#arrow')
 
 mixin news-card(src, title)
     article.card
@@ -110,3 +113,19 @@ mixin article-card(src, width, name, deskr)
                         time.pin.pin--lang Eng
                         time.pin.pin--type Категория
                     p.article-card__deskr= deskr
+
+mixin feed-item(title, data)
+    article.feed-item
+        a(href="#").feed-item__link
+            h3.feed-item__title= title
+            time(datetime='2020-02-19').feed-item__data= data
+
+mixin slider-item(src)
+    .slider__item
+        .slider__wrap
+            .slider__img-wrap
+                img(src= src, alt="slide alt", data-fancybox, data-src= src).slider__img
+
+mixin main-item(src, width)
+    a.main__item(href='#')
+        img(src= src, alt='Лого', width= width)

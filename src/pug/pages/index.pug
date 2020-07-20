@@ -1,0 +1,79 @@
+extends ../layout/index
+include ../utils/mixins
+block variables
+    - var pageTitle = 'Главная'
+
+block content
+
+    main
+        .container-max
+            .primary-grid.main
+                .primary-grid__map
+                    .map-wrapper
+                        #map MAP
+                .primary-grid__logos
+                    .main__wrapper
+                        .flex-start.main__row
+                            .flex-start
+                                h3.main__title
+                                    | Исполнители
+                                    br
+                                    | проекта
+                                +main-item('./assets/img/mock/logo-4.png', 142)
+                                +main-item('./assets/img/mock/logo-6.png', 65)
+                                +main-item('./assets/img/mock/logo-7.png', 75)
+                            .flex-start
+                                h3.main__title
+                                    | При финансовой
+                                    br
+                                    | поддержке
+                                +main-item('./assets/img/mock/logo-10.png', 96)
+                    .main__wrapper
+                        .flex-start
+                            h3.main__title
+                                | Немецкая
+                                br
+                                | поддержка
+                            +main-item('./assets/img/mock/logo-1.png', 105)
+                            +main-item('./assets/img/mock/logo-2.png', 109)
+                            +main-item('./assets/img/mock/logo-3.png', 71)
+                    .main__wrapper
+                        .flex-start.main__row
+                            div
+                                h3.main__title
+                                    | Русская
+                                    br
+                                    | поддержка
+                                .slider__dots
+                            div(style=" max-width: 1200px").logos-slider
+                                +main-item('./assets/img/mock/logo-4.png', 142)
+                                +main-item('./assets/img/mock/logo-6.png', 65)
+                                +main-item('./assets/img/mock/logo-7.png', 75)
+                                +main-item('./assets/img/mock/logo-1.png', 105)
+                                +main-item('./assets/img/mock/logo-2.png', 109)
+                                +main-item('./assets/img/mock/logo-3.png', 71)
+                                +main-item('./assets/img/mock/logo-4.png', 142)
+                                +main-item('./assets/img/mock/logo-6.png', 65)
+                                +main-item('./assets/img/mock/logo-7.png', 75)
+                                +main-item('./assets/img/mock/logo-10.png', 96)
+                                +main-item('./assets/img/mock/logo-10.png', 96)
+                .primary-grid__feed
+                    .video.main__video
+                        .video__overlay
+                            button.video__btn Видео о проекте
+                        video(controls='', poster='assets/img/mock/back-1.jpg')
+                            source(src='https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4', type='video/mp4')
+
+                    .feed
+                        h2.feed__title Последние новости
+                        +feed-item('Российские ученые нашли способ повысить эффективность солнечных батарей', '19.02.2020')
+                        +feed-item('Молекула железа обеспечит более дешевую солнечную энергию', '19.02.2020')
+                        +feed-item('Затраты на производство солнечных батарей могут стать еще меньше', '19.02.2020')
+                        +feed-item('Китай пожаловался на США в ВТО из-за солнечных батарей', '19.02.2020')
+                        a(href="#").button.feed__more Все новости
+                .primary-grid__footer
+                    footer
+                        .container
+                            .flex-end
+                                span 2020 © Copyright  |
+                                a(href="#").link.main-footer__link Выходные данные

@@ -1,6 +1,10 @@
 .contact-cards {
   width: calc(100% + 30px);
   margin: 40px -15px 60px;
+
+  .slick-dots {
+    bottom: 0;
+  }
 }
 
 @media screen and (max-width: $smDesktopWidth) {
@@ -20,6 +24,7 @@
   .contact-cards {
     .slick-slide {
       margin-right: 10px;
+      margin-bottom: 40px;
     }
   }
 }

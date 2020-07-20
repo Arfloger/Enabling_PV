@@ -23,6 +23,15 @@
         opacity: .7;
     }
 
+    @media screen and (max-width: $bigTbWidth) {
+        top: 22px;
+    }
+
+
+    @media screen and (max-width: $smDesktopWidth) {
+        top: 11px;
+    } 
+
     @media screen and (max-width: $tabletWidth) {
         width: 40px;
         height: 40px;
@@ -32,4 +41,5 @@
     @media screen and (max-width: $smTabletWidth) {
         top: 10px;
     }
+    
 }

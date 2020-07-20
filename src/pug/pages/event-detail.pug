@@ -20,11 +20,25 @@ block content
                             svg(width='14', height='20')
                                 use(xlink:href='#pin')
                             | Йоханесбург, Южная Африка
-                    a(href="#", aria-label="Поделиться").link.btn-mode
-                        span.btn
-                            svg(width='18', height='15')
-                                use(xlink:href='#share')
-                        | Поделиться
+                    
+                    .share
+                        a(href="#", aria-label="Поделиться").link.btn-mode.share__main-btn
+                            span.btn
+                                svg(width='18', height='15')
+                                    use(xlink:href='#share')
+                            | Поделиться
+                        ul.share__list
+                            li.share__item
+                                a(aria-label="Закрыть").btn.share__btn--close
+                            li.share__item
+                                a(href="#", aria-label="Вконтакте").btn.share__btn--vk
+                            li.share__item
+                                a(href="#", aria-label="Фейсбук").btn.share__btn--fb
+                            li.share__item
+                                a(href="#", aria-label="Твиттер").btn.share__btn--tw
+                            li.share__item
+                                a(href="#", aria-label="Одноклассники").btn.share__btn--ok
+
                 .article__wrap.flex-between
                     .article__img-wrap.article__img-wrap--mode
                         img(src="./assets/img/mock/back-1.jpg", width="564", alt="Energy subsidies evolution in the global energy transformation to 2050").article__img

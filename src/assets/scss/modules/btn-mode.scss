@@ -5,6 +5,8 @@
 
   .btn {
     margin-right: 10px;
+    position: relative;
+    z-index: -1;
   }
 
   &:hover .btn {

@@ -1,0 +1,87 @@
+.share {
+    min-width: 300px;
+    margin-left: 20px;
+    position: relative;
+
+    @media screen and (max-width: $smDesktopWidth) {
+        min-width: auto;
+    }
+
+    @media screen and (max-width: $smTabletWidth) {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+
+    &__list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        display: none;
+        z-index: 10;
+
+        &.active {
+            display: flex;
+
+            @media screen and (max-width: $smDesktopWidth) {
+                display: block;
+            }
+        }
+    }
+
+    &__item {
+        margin: 5px;
+        padding-left: 0;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    &__btn {
+
+        &--close {
+            background-image: url("../img/assets/icon-close.svg");
+
+            @media screen and (max-width: $smTabletWidth) {
+                background-size: 15px;
+            }
+        }
+
+        &--vk {
+            background-image: url("../img/assets/icon-vk2.svg");
+
+            @media screen and (max-width: $smTabletWidth) {
+                background-size: 15px;
+             }
+        }
+
+        &--fb {
+            background-image: url("../img/assets/icon-fb.svg");
+
+            @media screen and (max-width: $smTabletWidth) {
+                background-size: 8px;
+             }
+        }
+
+        &--tw {
+            background-image: url("../img/assets/icon-tw.svg");
+
+            @media screen and (max-width: $smTabletWidth) {
+                background-size: 15px;
+             }
+        }
+
+        &--ok {
+            background-image: url("../img/assets/icon-ok.svg");
+
+            @media screen and (max-width: $smTabletWidth) {
+               background-size: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.primary-grid {
+  display: grid;
+  grid-template-areas:
+          "map feed"
+          "part feed"
+          "part footer";
+  grid-template-columns: 79.5% 20.5%;
+
+  grid-template-rows: 545px auto;
+  grid-gap: 60px;
+
+  &__map {
+    grid-area: map;
+  }
+
+  &__feed {
+    grid-area: feed;
+  }
+
+  &__logos {
+    grid-area: part;
+  }
+
+  &__footer {
+    grid-area: footer;
+    padding-bottom: 60px;
+  }
+}

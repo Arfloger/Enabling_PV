@@ -4,6 +4,7 @@ if ($('.contact-cards').length > 0) {
         responsive: [{
             breakpoint: 480,
             settings: {
+                adaptiveHeight: true,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 arrows: false,

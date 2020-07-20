@@ -1,0 +1,33 @@
+.feed-item {
+    margin: 25px 0;
+    border-bottom: 1px solid  rgba(45, 78, 150, 0.1);
+
+    &:last-of-type {
+        border-bottom: none;
+    }
+
+    &__link {
+        color: $main;
+        transition: color .4s;
+
+        &:hover .feed-item__title ,
+        &:focus .feed-item__title  {
+            color: $active;
+        }
+    }
+
+    &__title {
+        margin-bottom: 0;
+        font-family: $mainFont;
+        font-size: 16px;
+        font-weight: bold;
+        transition: color .4s;
+    }
+
+    &__data {
+        display: block;
+        margin: 10px 0;
+        color: rgba(38, 42, 50, 0.5);
+        font-size: 14px;
+    }
+}

@@ -6,8 +6,10 @@
 @import "utils/visually-hidden";
 
 @import "modules/link";
+@import "modules/arrow";
 @import "modules/button";
 @import "modules/btn";
+@import "modules/btn-mode";
 @import "modules/pin";
 @import "modules/event-type";
 @import "modules/back";
@@ -29,8 +31,18 @@
 @import "modules/error-text";
 @import "modules/success-text";
 
+@import "modules/pagination-wrap";
+@import "modules/pagination";
+@import "modules/share";
+@import "modules/video";
+
+@import "modules/feed";
+@import "modules/feed-item";
+
 @import "modules/flex-between";
 @import "modules/main-grid";
+@import "modules/primary-grid";
+@import "modules/main";
 
 @import "modules/main-header";
 @import "modules/main-footer";
@@ -38,13 +50,7 @@
 @import "modules/inner-list";
 
 @import "modules/logo";
-@import "modules/lang";
 @import "modules/social";
-@import "modules/arrow";
-@import "modules/btn-mode";
-
-@import "modules/pagination-wrap";
-@import "modules/pagination";
 
 @import "modules/article";
 @import "modules/article-subtitle";

@@ -49,20 +49,10 @@ header.main-header
                 .main-header__social.social
                     ul.social__list
                         li.social__item
-                            a(href="#", area-label='Мы в Инстаграм', target="_blank").social__link.social__link--inst
+                            a(href="#", area-label='Мы в Инстаграм', target="_blank").btn
                                 svg(width='18', height='18')
                                     use(xlink:href='#inst')
-                .lang
-                    button(type="button", aria-label="Выбрать язык").lang__btn.lang__btn--main De
-                    ul.lang__list
-                        li.lang__item
-                            a(aria-label="Закрыть").lang__btn.lang__btn--close
-                        li.lang__item
-                            a(href="#", aria-label="Английский").lang__btn En
-                        li.lang__item
-                            a(href="#", aria-label="Русский").lang__btn Ru
-                        li.lang__item
-                            a(href="#", aria-label="Немецкий").lang__btn.active De
+                a(href="#", aria-label="Текущий язык").btn De
                 .burger
                     button(area-label='Открыть меню').burger-btn
         include ./mob-menu

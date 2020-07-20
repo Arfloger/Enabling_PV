@@ -1,0 +1,30 @@
+.feed {
+    padding: 30px 25px 15px;
+    background-color: #fff;
+    border: 1px solid rgba(45, 78, 150, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 15px 14px rgba(0, 0, 0, 0.03);
+    overflow: hidden;
+
+    &__title {
+        font-family: $thirdFont;
+        padding-bottom: 25px;
+        font-size: 20px;
+        font-weight: bold;
+        position: relative;
+
+        &::before {
+            content: "";
+            height: 1px;
+            background: rgba(45, 78, 150, 0.1);
+            position: absolute;
+            left: -25px;
+            right: -25px;
+            bottom: 0;
+        }
+    }
+
+    &__more {
+        width: 100%;
+    }
+}
