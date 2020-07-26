@@ -11,9 +11,7 @@
     color: $main;
     transition: box-shadow .4s;
 
-    &:hover,
-    &:focus {
-
+    &:hover{
       box-shadow: none;
 
       .project-card__name {

@@ -1,0 +1,22 @@
+#map {
+  width: 100%;
+  height: 500px;
+}
+
+@media screen and (max-width: $desktopWidth) {
+  #map {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: $bigTbWidth) {
+  #map {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  #map {
+    height: 200px;
+  }
+}

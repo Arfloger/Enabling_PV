@@ -1,4 +1,17 @@
 @import "node_modules/slick-carousel/slick/slick.scss";
 @import "node_modules/slick-carousel/slick/slick-theme.scss";
-//@import "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.scss";
+
+
+.js-focus-visible:focus:not(.focus-visible) {
+  outline: none;
+}
+
+.slick-disabled {
+  display: none !important;
+}
+
+.slick-active:focus,
+.main__item:focus {
+  outline: none !important;
+}
 

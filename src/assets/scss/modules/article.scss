@@ -102,6 +102,44 @@
   &__project-header {
     margin: 40px 0;
   }
+
+  p {
+    margin: 20px 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      padding-left: 20px;
+      margin: 10px 0;
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        background-color: $main;
+        border-radius: 50%;
+        position: absolute;
+        top: 10px;
+        left: 0;
+      }
+    }
+  }
+
+  a:not(.button) {
+    color: $primary;
+    text-decoration: none;
+    transition: color .4s;
+
+    &:hover{
+      color: $active;
+    }
+  }
+
 }
 
 
@@ -132,6 +170,19 @@
     &__wrap {
       margin-bottom: 20px;
     }
+
+    p {
+      margin: 15px 0;
+    }
+
+    ul {
+      li {
+        &::before {
+          top: 6px;
+        }
+      }
+    }
+
   }
 }
 
@@ -163,6 +214,18 @@
 @media screen and (max-width: $phoneWidth) {
   .article {
     font-size: 14px;
+
+    &__points-wrap {
+      width: 100%;
+      flex-wrap: nowrap;
+      margin-right: 0;
+    }
+
+    &__points {
+      * {
+        margin-right: 12px;
+      }
+    }
 
     &__prewrap {
       justify-content: space-between;

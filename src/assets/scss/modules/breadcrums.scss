@@ -35,14 +35,12 @@
       transition: fill .4s, opacity .4s;
     }
 
-    &:hover,
-    &:focus {
+    &:hover {
       color: $active;
       opacity: 1;
     }
 
-    &:hover svg,
-    &:focus svg {
+    &:hover svg {
       fill: $active;
       opacity: 1;
     }

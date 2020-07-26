@@ -22,10 +22,8 @@
         font-size: 13px;
         font-weight: normal;
         transition: color .5s;
-        outline: none;
     
-        &:hover,
-        &:focus {
+        &:hover {
           color: $primary;
         }
       }

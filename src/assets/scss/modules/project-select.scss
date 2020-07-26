@@ -45,18 +45,20 @@
         background-color: #F6F6F6;
         border: 1px solid transparent;
         border-radius: 5px;
-        outline: none;
         box-shadow: none;
         box-sizing: border-box;
         transition: background-color .4s, border .4s;
         cursor: pointer;
+        outline: none;
 
 
         &:hover {
             border: 1px solid $primary;
         }
 
-        &:focus {
+
+        &.focus-visible {
+            outline: none;
             background-color: #fff;
             border: 1px solid $primary;
         }
@@ -96,7 +98,6 @@
         padding: 10px 20px;
         border-bottom: 1px solid rgba(0, 0, 0, .05);
         transition: background-color .4s;
-        outline: none;
 
         &::before {
             display: none;

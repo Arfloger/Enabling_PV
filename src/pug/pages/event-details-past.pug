@@ -39,9 +39,8 @@ block content
                             svg(width='14', height='14')
                                 use(xlink:href='#arrow-down')
                 h2.article-subtitle О мероприятии
-                .text-block
-                    p Europe has been a pioneer in the development of ocean energy technologies. The vast majority of global capacity is installed in Europe and most projects around the world use European technology. However, other countries are catching up. Canada, the US and China are developing their own markets and new domestic champions are starting to emerge. To make the most of its first-mover advantage, both at home and abroad, Europe should act now.
-                    p This webinar sought to concretely address this issue by providing useful examples and feedback to policy makers and other stakeholders. IRENA, a global authority on the development of renewable energy, will provide a high-level overview of the state of ocean energy worldwide to set the scene for those unfamiliar with the sector. As the voice of Europe’s ocean energy industry, Ocean Energy Europe will connect EU policy actions with the current successes and future priorities of the sector as it approaches industrialisation.
+                p Europe has been a pioneer in the development of ocean energy technologies. The vast majority of global capacity is installed in Europe and most projects around the world use European technology. However, other countries are catching up. Canada, the US and China are developing their own markets and new domestic champions are starting to emerge. To make the most of its first-mover advantage, both at home and abroad, Europe should act now.
+                p This webinar sought to concretely address this issue by providing useful examples and feedback to policy makers and other stakeholders. IRENA, a global authority on the development of renewable energy, will provide a high-level overview of the state of ocean energy worldwide to set the scene for those unfamiliar with the sector. As the voice of Europe’s ocean energy industry, Ocean Energy Europe will connect EU policy actions with the current successes and future priorities of the sector as it approaches industrialisation.
                 h2.article-subtitle Материалы
                 .flex-between.align-start.materials-wrap.article__materials-wrap
                     table.materials
@@ -75,30 +74,13 @@ block content
                         svg(width='18', height='9')
                             use(xlink:href='#arrow')
                     .slider
-                        .slider__item
-                            .slider__wrap
-                                .slider__img-wrap
-                                    img(src="./assets/img/mock/back-1.jpg", alt="slide alt").slider__img
-                        .slider__item
-                            .slider__wrap
-                                .slider__img-wrap
-                                    img(src="./assets/img/mock/back-1.jpg", alt="slide alt").slider__img
-                        .slider__item
-                            .slider__wrap
-                                .slider__img-wrap
-                                    img(src="./assets/img/mock/back-1.jpg", alt="slide alt").slider__img
-                        .slider__item
-                            .slider__wrap
-                                .slider__img-wrap
-                                    img(src="./assets/img/mock/back-1.jpg", alt="slide alt").slider__img
-                        .slider__item
-                            .slider__wrap
-                                .slider__img-wrap
-                                    img(src="./assets/img/mock/back-1.jpg", alt="slide alt").slider__img
-                        .slider__item
-                            .slider__wrap
-                                .slider__img-wrap
-                                    img(src="./assets/img/mock/back-1.jpg", alt="slide alt").slider__img
+                        +slider-item-video()
+                        +slider-item('./assets/img/mock/back-1.jpg')
+                        +slider-item('./assets/img/mock/back-1.jpg')
+                        +slider-item('./assets/img/mock/back-1.jpg')
+                        +slider-item('./assets/img/mock/back-1.jpg')
+                        +slider-item('./assets/img/mock/back-1.jpg')
+                        +slider-item('./assets/img/mock/back-1.jpg')
                 table#scroll-schedule.schedule
                     caption.article-subtitle График мероприятий
                     tbody

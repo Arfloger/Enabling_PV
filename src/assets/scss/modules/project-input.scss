@@ -8,7 +8,6 @@
     background-color: #F3F4F5;
     border: 1px solid #F3F4F5;
     border-radius: 5px;
-    outline: none;
     box-shadow: none;
     box-sizing: border-box;
     transition: background-color .4s, border .4s;
@@ -18,7 +17,8 @@
         border: 1px solid $primary;
     }
 
-    &:focus {
+    &.focus-visible {
+        outline: none;
         background-color: #fff;
         border: 1px solid $primary;
     }

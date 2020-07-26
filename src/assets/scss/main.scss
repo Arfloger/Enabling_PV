@@ -55,7 +55,6 @@
 @import "modules/article";
 @import "modules/article-subtitle";
 @import "modules/article-row";
-@import "modules/text-block";
 @import "modules/project-header";
 @import "modules/schedule";
 @import "modules/materials-wrap";
@@ -84,8 +83,11 @@
 @import "modules/title-gap";
 @import "modules/event-wrap";
 
+@import "modules/logos-slider";
 @import "modules/logo-item";
 
 @import "modules/slick";
 @import "modules/slider-wrap";
 @import "modules/slider";
+
+@import "modules/map";

@@ -21,7 +21,8 @@ module.exports = {
         paths: PATHS
     },
     entry: {
-        app: PATHS.src
+        app: PATHS.src,
+        map: `${PATHS.src}/map.js`
     },
     output: {
         filename: `${PATHS.assets}js/[name].[hash].js`,
@@ -126,7 +127,7 @@ module.exports = {
             'window.jQuery': 'jquery',
         }),
         new MiniCssExtractPlugin({
-            filename: `${PATHS.assets}css/[name].[hash].css`
+            filename: `${PATHS.assets}css/[name].[contenthash].css`
         }),
         new CopyWebpackPlugin([{
                 from: `${PATHS.src}/${PATHS.assets}img`,
@@ -145,7 +146,8 @@ module.exports = {
             page =>
             new HtmlWebpackPlugin({
                 template: `${PAGES_DIR}/${page}`,
-                filename: `./${page.replace(/\.pug/,'.html')}`
+                filename: `./${page.replace(/\.pug/,'.html')}`,
+                inject: true
             })
         )
     ],

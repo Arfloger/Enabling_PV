@@ -17,8 +17,7 @@
         transition: all 0.4s;
     }
 
-    &:hover::after,
-    &:focus::after {
+    &:hover::after {
         border: 2px solid $secondary;
         border-right-color: transparent;
         border-top-color: transparent;

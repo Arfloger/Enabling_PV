@@ -4,10 +4,12 @@
           "map feed"
           "part feed"
           "part footer";
-  grid-template-columns: 79.5% 20.5%;
-
-  grid-template-rows: 545px auto;
+  grid-template-columns: calc(79.5% - 60px) 20.5%;
   grid-gap: 60px;
+
+  > * {
+    min-width: 0;
+  }
 
   &__map {
     grid-area: map;
@@ -24,5 +26,44 @@
   &__footer {
     grid-area: footer;
     padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: $desktopWidth) {
+  .primary-grid {
+    grid-template-columns: calc(75.5% - 40px) 24.5%;
+    grid-gap: 40px;
+  }
+}
+
+@media screen and (max-width: $bigTbWidth) {
+  .primary-grid {
+    grid-template-columns: 100%;
+    grid-template-areas:
+          "map"
+          "feed"
+          "part"
+          "footer";
+
+    &__feed {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: stretch;
+    }
+
+    &__footer {
+      .flex-end {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .primary-grid {
+    &__feed {
+      display: block;
+    }
   }
 }

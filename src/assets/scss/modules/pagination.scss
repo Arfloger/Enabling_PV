@@ -34,8 +34,7 @@
     border-radius: 50%;
     transition: color .4s, border .4s;
 
-    &:hover,
-    &:focus {
+    &:hover {
         color: $active;
         border: 1px solid $active;
     }

@@ -37,6 +37,8 @@
 
 @media screen and (max-width: $bigTbWidth) {
     .main-header {
+        margin: 0;
+
         &__nav {
             display: none;
         }

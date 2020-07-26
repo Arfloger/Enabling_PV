@@ -11,20 +11,14 @@
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    outline: none;
     position: fixed;
     top: 11px;
     right: 20px;
     z-index: 10;
     transition: opacity .4s;
 
-    &:hover,
-    &:focus {
+    &:hover {
         opacity: .7;
-    }
-
-    @media screen and (max-width: $bigTbWidth) {
-        top: 22px;
     }
 
 

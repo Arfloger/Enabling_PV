@@ -31,8 +31,7 @@
         font-size: 18px;
         transition: color .4s;
 
-        &:hover,
-        &:focus {
+        &:hover {
             color: $active;
         }
     }

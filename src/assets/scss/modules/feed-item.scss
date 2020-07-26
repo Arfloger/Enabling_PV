@@ -10,8 +10,7 @@
         color: $main;
         transition: color .4s;
 
-        &:hover .feed-item__title ,
-        &:focus .feed-item__title  {
+        &:hover .feed-item__title {
             color: $active;
         }
     }
@@ -29,5 +28,37 @@
         margin: 10px 0;
         color: rgba(38, 42, 50, 0.5);
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width: $bigTbWidth) {
+    .feed-item {
+        display: none;
+        border-bottom: none;
+
+        &:first-of-type {
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width: $smTabletWidth) {
+    .feed-item {
+        margin: 15px 0;
+
+        &__title {
+            font-size: 13px;
+        }
+
+        &__data {
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: $phoneWidth) {
+    .feed-item {
+        display: block;
+        border-bottom: 1px solid  rgba(45, 78, 150, 0.1);
     }
 }

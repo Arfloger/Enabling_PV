@@ -49,8 +49,7 @@
       transition: fill .4s;
     }
 
-    &:hover,
-    &:focus {
+    &:hover{
       svg {
         fill: $active;
       }

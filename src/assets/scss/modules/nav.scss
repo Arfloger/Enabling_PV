@@ -33,7 +33,6 @@
       color: #fff;
       font-family: $thirdFont;
       font-weight: 500;
-      outline: none;
       white-space: nowrap;
       transition: color .4s;
 
@@ -63,8 +62,7 @@
           transition: all 0.4s;
         }
 
-        &:hover,
-        &:focus {
+        &:hover {
           color: #BBC4CF;
         }
 
@@ -85,13 +83,11 @@
     color: $main;
     font-size: 14px;
     text-align: center;
-    font-weight:700;
+    font-weight: 500;
     transition: color .5s;
-    outline: none;
     white-space: nowrap;
 
-    &:hover,
-    &:focus {
+    &:hover {
       color: $secondary;
     }
   }
@@ -125,8 +121,7 @@
       color: #fff;
       text-align: left;
 
-      &:hover,
-      &:focus {
+      &:hover{
         color: #BBC4CF;
       }
     }

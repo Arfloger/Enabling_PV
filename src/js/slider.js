@@ -3,7 +3,7 @@ $(`.slider`).slick({
     slidesToScroll: 4,
     arrows: true,
     dots: true,
-    infinite: true,
+    infinite: false,
     variableWidth: false,
     appendDots: $(`.slider__dots`),
     prevArrow: $(`.slider__prev`),
@@ -32,7 +32,7 @@ $(`.slider-mode`).slick({
     slidesToScroll: 2,
     arrows: true,
     dots: true,
-    infinite: true,
+    infinite: false,
     variableWidth: false,
     // appendDots: $(`.slider__dots`),
     prevArrow: $(`.slider__prev`),
@@ -67,6 +67,17 @@ if ($('.logos-slider').length > 0) {
         appendDots: $(`.slider__dots`),
         responsive: [
             {
+                breakpoint: 1441,
+                settings: {
+                    slidesToShow: 7,
+                    slidesToScroll: 7,
+                    autoplay: true,
+                    arrows: false,
+                    dots: true,
+                    infinite: false,
+                }
+            },
+            {
                 breakpoint: 1025,
                 settings: {
                     slidesToShow: 5,
@@ -76,21 +87,24 @@ if ($('.logos-slider').length > 0) {
                     dots: true,
                     infinite: false,
                 }
-            }]
+            },
+        ]
     }
 
-    $slick_slider.slick(settings);
+    if ($(window).width() > 640) {
+        $slick_slider.slick(settings);
+    }
 
-    // $(window).on('resize', function () {
-    //     if ($(window).width() > 1500 && $(window).width() > 640) {
-    //         if ($slick_slider.hasClass('slick-initialized')) {
-    //             $slick_slider.slick('unslick');
-    //         }
-    //         return
-    //     }
-    //
-    //     if (!$slick_slider.hasClass('slick-initialized')) {
-    //         return $slick_slider.slick(settings);
-    //     }
-    // });
+    $(window).on('resize', function () {
+        if ( $(window).width() < 640) {
+            if ($slick_slider.hasClass('slick-initialized')) {
+                $slick_slider.slick('unslick');
+            }
+            return
+        }
+
+        if (!$slick_slider.hasClass('slick-initialized')) {
+            return $slick_slider.slick(settings);
+        }
+    });
 }

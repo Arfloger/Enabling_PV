@@ -13,8 +13,7 @@
     border-color: $active;
   }
 
-  &:hover svg,
-  &:focus svg {
+  &:hover svg {
     fill: $active;
   }
 }

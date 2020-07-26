@@ -1,8 +1,6 @@
 .slick-slide {
-  &:active,
-  &:focus {
+  &:active {
     border: none;
-    outline: none;
   }
 }
 

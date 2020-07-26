@@ -124,7 +124,14 @@ mixin slider-item(src)
     .slider__item
         .slider__wrap
             .slider__img-wrap
-                img(src= src, alt="slide alt", data-fancybox, data-src= src).slider__img
+                img(src= src, alt="slide alt", data-fancybox="images", rel="gallery", data-src= src).slider__img
+
+mixin slider-item-video()
+    .slider__item
+        .slider__wrap
+            a(href="https://www.youtube.com/watch?v=0UbkJ6Izue8&list=PLKaafC45L_SRoYnuEW5cgqHN-kpSTVfMs&index=9&t=228s", aria-label="Открыть видео", data-fancybox).video
+                img(src="./assets/img/mock/back-1.jpg" width="385" alt="Название видео").video__img
+                button.video__btn.video__btn--slider
 
 mixin main-item(src, width)
     a.main__item(href='#')

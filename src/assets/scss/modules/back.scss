@@ -16,8 +16,7 @@
     transition: fill .4s;
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: $active;
     opacity: 1;
 

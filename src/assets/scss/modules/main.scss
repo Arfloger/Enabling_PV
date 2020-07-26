@@ -1,9 +1,19 @@
 .main {
+
   &__row {
-    flex-wrap: nowrap;
+    &--slider {
+      flex-wrap: nowrap;
+    }
   }
+
+  &__col {
+    width: auto;
+    min-height: 122px;
+    flex-shrink: 0;
+  }
+
   &__title {
-    min-width: 95px;
+    min-width: 120px;
     font-family: $thirdFont;
     margin: 0 50px 0 0;
     font-size: 16px;
@@ -16,7 +26,6 @@
     margin-right: 55px;
     filter: sepia(100%) hue-rotate(190deg) saturate(50%) brightness(0.9);
     opacity: .7;
-    outline: none;
     transition: opacity 0.4s, filter .2s ease-in-out;
 
     &:hover {
@@ -26,11 +35,89 @@
   }
 
   &__video {
+    padding-top: 56%;
     margin-bottom: 40px;
+
+    .video__img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
   }
 
   .slider__dots {
     margin-top: 20px;
     margin-left: 0;
+  }
+}
+
+@media screen and (max-width: $desktopWidth) {
+  .main {
+    &__title {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: $smDesktopWidth) {
+  .main {
+    &__col {
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: $bigTbWidth) {
+  .main {
+    &__video {
+      width: 49%;
+      padding-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: $tabletWidth) {
+  .main {
+    &__item {
+      margin-right: 20px;
+
+      img {
+        max-width: 70%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $smTabletWidth) {
+  .main {
+    &__row {
+      display: block;
+    }
+
+    &__col {
+      width: 100%;
+    }
+
+    &__title {
+      width: 100%;
+
+      br {
+        display: none;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: $phoneWidth) {
+  .main {
+    &__video {
+      width: 100%;
+      padding-top: 56%;
+      margin-bottom: 20px;
+    }
   }
 }

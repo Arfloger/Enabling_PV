@@ -10,42 +10,42 @@ block content
             .primary-grid.main
                 .primary-grid__map
                     .map-wrapper
-                        #map MAP
+                        #map
                 .primary-grid__logos
                     .main__wrapper
-                        .flex-start.main__row
-                            .flex-start
+                        .flex-start.align-start.main__row
+                            .flex-start.main__col
                                 h3.main__title
-                                    | Исполнители
+                                    | Исполнители&nbsp;
                                     br
                                     | проекта
                                 +main-item('./assets/img/mock/logo-4.png', 142)
                                 +main-item('./assets/img/mock/logo-6.png', 65)
                                 +main-item('./assets/img/mock/logo-7.png', 75)
-                            .flex-start
+                            .flex-start.main__col
                                 h3.main__title
-                                    | При финансовой
+                                    | При финансовой&nbsp;
                                     br
                                     | поддержке
                                 +main-item('./assets/img/mock/logo-10.png', 96)
                     .main__wrapper
                         .flex-start
                             h3.main__title
-                                | Немецкая
+                                | Немецкая&nbsp;
                                 br
                                 | поддержка
                             +main-item('./assets/img/mock/logo-1.png', 105)
                             +main-item('./assets/img/mock/logo-2.png', 109)
                             +main-item('./assets/img/mock/logo-3.png', 71)
                     .main__wrapper
-                        .flex-start.main__row
+                        .flex-start.main__row.main__row--slider
                             div
                                 h3.main__title
-                                    | Русская
+                                    | Русская&nbsp;
                                     br
                                     | поддержка
                                 .slider__dots
-                            div(style=" max-width: 1200px").logos-slider
+                            div.logos-slider
                                 +main-item('./assets/img/mock/logo-4.png', 142)
                                 +main-item('./assets/img/mock/logo-6.png', 65)
                                 +main-item('./assets/img/mock/logo-7.png', 75)
@@ -58,12 +58,10 @@ block content
                                 +main-item('./assets/img/mock/logo-10.png', 96)
                                 +main-item('./assets/img/mock/logo-10.png', 96)
                 .primary-grid__feed
-                    .video.main__video
+                    a(href="https://www.youtube.com/watch?v=0UbkJ6Izue8&list=PLKaafC45L_SRoYnuEW5cgqHN-kpSTVfMs&index=9&t=228s", aria-label="Открыть видео", data-fancybox).video.main__video
+                        img(src="./assets/img/mock/back-1.jpg" width="385" alt="Название видео").video__img
                         .video__overlay
                             button.video__btn Видео о проекте
-                        video(controls='', poster='assets/img/mock/back-1.jpg')
-                            source(src='https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4', type='video/mp4')
-
                     .feed
                         h2.feed__title Последние новости
                         +feed-item('Российские ученые нашли способ повысить эффективность солнечных батарей', '19.02.2020')
@@ -71,9 +69,10 @@ block content
                         +feed-item('Затраты на производство солнечных батарей могут стать еще меньше', '19.02.2020')
                         +feed-item('Китай пожаловался на США в ВТО из-за солнечных батарей', '19.02.2020')
                         a(href="#").button.feed__more Все новости
+                            svg(width='18', height='9')
+                                use(xlink:href='#arrow')
                 .primary-grid__footer
                     footer
-                        .container
-                            .flex-end
-                                span 2020 © Copyright  |
-                                a(href="#").link.main-footer__link Выходные данные
+                        .flex-end
+                            span 2020 © Copyright  |
+                            a(href="#").link.main-footer__link Выходные данные

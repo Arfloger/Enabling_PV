@@ -1,0 +1,19 @@
+.logos-slider {
+    max-width: calc(100% - 150px);
+
+  .slick-track {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: $desktopWidth) {
+  .logos-slider {
+    max-width: calc(100% - 170px);
+  }
+}
+
+@media screen and (max-width: $smTabletWidth) {
+  .logos-slider {
+    max-width: 100%;
+  }
+}

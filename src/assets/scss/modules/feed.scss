@@ -25,6 +25,106 @@
     }
 
     &__more {
+        min-width: 100%;
+
+        svg {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: $bigTbWidth)  {
+    .feed {
+        width: 49%;
+        padding: 30px 25px;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+
+        &__title {
+            display: none;
+        }
+
+        &__more {
+            margin-top: auto;
+            background-color: transparent;
+            background-image: none;
+            color: $main;
+            padding: 15px 15px 15px 0;
+            position: relative;
+
+            svg {
+                display: block;
+                fill: $main;
+                position: absolute;
+                top: 50%;
+                right: 10px;
+                transform: rotate(-90deg);
+            }
+
+            &:not(:disabled):hover {
+                background-color: transparent;
+                opacity: 1;
+                color: $active;
+
+                svg {
+                    fill: $active;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $tabletWidth) {
+    .feed {
+        min-height: auto;
+    }
+}
+
+@media screen and (max-width: $smTabletWidth) {
+    .feed {
+        padding: 10px 15px;
+
+        &__more {
+            padding: 5px 15px 5px 0;
+
+            svg {
+                width: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $phoneWidth) {
+    .feed {
         width: 100%;
+        padding-top: 15px;
+
+        &__title {
+            display: block;
+            padding-bottom: 15px;
+            font-size: 17px;
+        }
+
+        &__more {
+            background-color: $primary;
+            background-image: url("../img/assets/icon-button-arrow.svg");
+            color: #fff;
+            padding: 14px 35px 11px 30px;
+
+            svg {
+                display: none;
+            }
+
+            &:not(:disabled):hover {
+                background-color: rgba(45, 78, 150, .8);
+                opacity: 1;
+                color: #fff;
+
+                svg {
+                    fill: $active;
+                }
+            }
+        }
     }
 }

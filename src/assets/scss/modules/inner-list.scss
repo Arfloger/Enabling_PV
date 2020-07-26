@@ -24,10 +24,8 @@
         font-weight: bold;
         border-bottom: 1px solid #F2F2F2;
         transition: color .5s;
-        outline: none;
     
-        &:hover,
-        &:focus {
+        &:hover{
           color: $secondary;
         }
       }
