@@ -1,4 +1,5 @@
 .nav {
+  
   &__list {
     margin: 0;
     padding: 0;
@@ -98,9 +99,11 @@
     .arrow:after {
       right: 8px;
     }
+
     .arrow &__link {
       padding-right: 20px;
     }
+
     &__link {
       padding: 10px 15px;
     }
@@ -118,6 +121,7 @@
     &__link {
       padding: 10px 20px;
       font-size: 16px;
+      font-weight: 400;
       color: #fff;
       text-align: left;
 

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --host 192.168.1.11 --open --config ./build/webpack.dev.conf.js",
+    "dev": "webpack-dev-server --host 192.168.1.12 --open --config ./build/webpack.dev.conf.js",
     "build": "webpack --config ./build/webpack.build.conf.js"
   },
   "browserslist": [
@@ -41,6 +41,7 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
-    "focus-visible": "^5.1.0"
+    "focus-visible": "^5.1.0",
+    "html-webpack-template-pug": "^1.1.1"
   }
 }

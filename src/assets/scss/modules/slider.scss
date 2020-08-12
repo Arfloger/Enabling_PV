@@ -90,9 +90,7 @@
     }
 
     &__dots {
-      .slick-dots {
-        text-align: right;
-      }
+      display: none;
     }
   }
 }

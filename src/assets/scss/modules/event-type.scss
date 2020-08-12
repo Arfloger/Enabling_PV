@@ -1,6 +1,6 @@
 .event-type {
   display: inline-block;
-  padding: 5px 15px;
+  padding: 1px 14px;
   margin: 3px 0;
   font-size: 18px;
   color: rgba(84, 84, 84, .8);
@@ -32,7 +32,7 @@
 
 @media screen and (max-width: $smTabletWidth) {
   .event-type {
-    padding: 2px 7px;
+    padding: 1px 7px;
     font-size: 12px;
   }
 }

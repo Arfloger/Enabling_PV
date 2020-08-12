@@ -30,3 +30,7 @@
   height: 10px;
   opacity: 1;
 }
+
+.slick-loading .slick-list {
+  background: #fff url('../img/assets/ajax-loader.gif') center center no-repeat;
+}
